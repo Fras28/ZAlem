@@ -12,7 +12,6 @@
 }
 .aPagar {
   padding: 0.3rem;
-
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -20,7 +19,7 @@
   box-shadow: 0px 0px 8px #E88A23;
   margin-left: 1rem;
   margin-right: 1rem;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 
 .rowsCardBag {
