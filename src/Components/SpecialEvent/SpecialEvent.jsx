@@ -1,8 +1,7 @@
 import React from "react";
 
 import "./SpecialEvent.css";
-import menuAdulto from "../assets/menu-newyear.jpg"
-import menuNiños from "../assets/menu-ninos.jpg"
+
 
 import { Nav } from "../Nav/Nav.jsx";
 
@@ -17,8 +16,8 @@ export const SpecialEvent = (id) => {
         <div className="conteinerLB3 animate__animated  animate__zoomIn animate__faster">
           <div>
             <div className="events">
-             <img className="eventImg" src={menuAdulto} alt="" />
-             <img className="eventImg" src={menuNiños} alt="" />
+             <img className="eventImg" src="" alt="" />
+             <img className="eventImg" src="" alt="" />
             </div>
             <div className="linkWpSpecial">
               <svg

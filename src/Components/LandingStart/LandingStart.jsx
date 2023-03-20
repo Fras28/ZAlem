@@ -23,18 +23,15 @@ export const Inicio = (url) => {
       <NavLink to={`${url.location.pathname}`}>
           
       <div className="marcaLanging ">
-     <h1 className="nameCart">Carta digital interactiva</h1>
+
+     <b className="logoTitle titStart">BAIRES</b>
       </div>
         </NavLink>
       <div className="btnEnter">
-
         <AlertDialogSlide/>
-
-      
         <Link to={`${url.location.pathname}/Landing`}>
         <button className="Enter animate__animated  animate__zoomIn animate__fast" >Entrar</button>
         </Link>
-     
       </div>
 
     </div>

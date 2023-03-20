@@ -1,7 +1,8 @@
 import React from "react";
 
 import "./TrackClub.css";
-import imgNYshanti from "../assets/event.webp"
+
+
 
 
 import { Nav } from "../Nav/Nav.jsx";
@@ -19,7 +20,7 @@ export const TrackClub = (id) => {
         <div className="conteinerLB3 animate__animated  animate__zoomIn animate__faster">
           <div>
             <div className="events">
-             <img className="eventImg" src={imgNYshanti} alt="" />
+             <img className="eventImg" src="" alt="" />
 
             </div>
             <div className="linkWpSpecial">

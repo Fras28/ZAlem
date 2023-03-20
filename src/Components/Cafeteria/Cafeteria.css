@@ -1,11 +1,10 @@
 .titleSection {
   font-size: 20px;
-  color: black;
-  font-family: "Montserrat", sans-serif;
+  color: white;
   text-align: left;
-  padding-left: 16px;
-  background-color: rgb(255, 255, 255);
-
+  padding-left:4px;
+  font-weight: 800;
+  -webkit-text-stroke: 2px black;
 }
 
 

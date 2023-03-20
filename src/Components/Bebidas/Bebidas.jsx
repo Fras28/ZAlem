@@ -4,7 +4,7 @@ import "./Bebidas.css";
 import { jsonCafe } from "../json";
 import { Nav } from "../Nav/Nav.jsx";
 import { VerPedido } from "../BtnBag/BtnBag.jsx";
-import bebidas from "../assets/bebidas.webp";
+
 import pepsi from "../assets/papsi.jpg"
 
 export const Bebidas = (id) => {
@@ -57,7 +57,7 @@ export const Bebidas = (id) => {
         />
         <Cards products={cocteleriaC} />
         <img
-            src={bebidas}
+            src=""
           alt="promo"
           id="4"
           width="100%"

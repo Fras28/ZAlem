@@ -1,13 +1,13 @@
 .LandingBack{
     /* background-image:url(https://i.pinimg.com/564x/ac/95/ff/ac95ffa91025ca875854caf5e179bf38.jpg) ;interiorEditado.jpg */
-    background-image:url("../assets/backMorton.jpg") ;
+    background-image:url("https://i.pinimg.com/originals/0b/30/28/0b3028248781f006e9caa58de29f1aca.jpg") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .LandingStartContainer{
   height: 50%;
@@ -40,7 +40,8 @@
     font-family: inherit;
     height: 3rem;
     border-radius: 30px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: #0d4862 0px 50px 100px -20px, #0d4862 0px 30px 60px -30px, #0d4862 0px -2px 6px 0px inset;
+
 
   }
   
@@ -89,15 +90,21 @@
     font-weight: 600;
 }
 .btnEnter{
-  margin-top: 15rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
+.titStart{
+font-size: 5rem;
+text-shadow: #0d4862 5px 5px 10px ;
+
+}
 
 @media (max-width: 600px) {
   .btnEnter{
-  margin-top: 6rem;
+  margin-top: 1rem;
+
 }
 }
