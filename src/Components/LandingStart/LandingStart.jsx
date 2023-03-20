@@ -24,6 +24,7 @@ export const Inicio = (url) => {
           
       <div className="marcaLanging ">
 
+
      <b className="logoTitle titStart">BAIRES</b>
       </div>
         </NavLink>
