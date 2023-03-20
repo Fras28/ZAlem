@@ -36,8 +36,8 @@
 .titInicio >p{
   margin: auto;
   padding: 0 0.5rem;
-  color: black;
-
+  color: #0d4862;
+  font-weight: 1000;
 }
 .naviLanding {
   display: flex;
