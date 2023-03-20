@@ -1,11 +1,10 @@
 .titleSection {
-  font-size: 20px;
-  color: white;
+  font-size: 24px;
+  color:  #0d4862;
   text-align: left;
   padding-left:4px;
   font-weight: 800;
-  -webkit-text-stroke: 2px black;
-}
+  }
 
 
 .cafeBg {
@@ -68,7 +67,7 @@
   margin-top: .3rem;
 }
 .sectioner > a:active {
-  background-color: #fcac009d;
+  background-color: #0b344683;
   border-radius: orange;
 }
 
