@@ -6,6 +6,7 @@ import { Nav } from "../Nav/Nav.jsx";
 import { VerPedido } from "../BtnBag/BtnBag.jsx";
 import p1 from "../assets/comida1.webp"
 import p2 from "../assets/comida2.webp"
+import papas from "../assets/papas.jpg"
 
 export const Comidas = (id) => {
 
@@ -46,7 +47,7 @@ export const Comidas = (id) => {
         />
         <Cards products={TAPEOS} espesificaciones="(SALSAS ALIOLI | PICANTE | CRIOLLA | CHEDDAR)"/>
         <img
-          src={p2}
+          src={papas}
           alt="promo"
           id="5"
         />
