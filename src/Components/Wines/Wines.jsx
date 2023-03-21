@@ -7,8 +7,6 @@ import { asyncallProducts } from "../redux/slice.jsx";
 import { VerPedido } from "../BtnBag/BtnBag.jsx";
 import wines from "../assets/wines.webp"
 
-import publi from "../assets/cafPast.jpg";
-
 
 export const Wines = (id) => {
 
