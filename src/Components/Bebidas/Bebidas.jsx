@@ -4,8 +4,11 @@ import "./Bebidas.css";
 import { jsonCafe } from "../json";
 import { Nav } from "../Nav/Nav.jsx";
 import { VerPedido } from "../BtnBag/BtnBag.jsx";
-
-import pepsi from "../assets/papsi.jpg"
+import heineken from "../assets/heineken.webp"
+import latras from "../assets/ortuzarLata.jpg"
+import barril from "../assets/ortuzarB.jpg"
+import tragosCla from "../assets/tragosC.jpg"
+import coca from "../assets/coca.avif"
 
 export const Bebidas = (id) => {
 
@@ -16,60 +19,60 @@ export const Bebidas = (id) => {
 
   
   const sAlcohol = jsonCafe.filter((e) => e.section === "SIN ALCOHOL");
-  const cerveza = jsonCafe.filter((e) => e.section === "CERVEZA");
-  const cocteleriaC = jsonCafe.filter((e) => e.section === "COCTELERIA CLASSICA");
-  const cocteleriaE = jsonCafe.filter((e) => e.section === "COCTELERIA ESPECIAL");
-  const VINOS = jsonCafe.filter((e) => e.section === "VINOS & CHAMPAGNE");
+  const cerveza = jsonCafe.filter((e) => e.section === "BIRRITAS");
+  const Latas = jsonCafe.filter((e) => e.section === "LATAS");
+  const Heineken = jsonCafe.filter((e) => e.section === "HEINEKEN");
+  const TragosC = jsonCafe.filter((e) => e.section === "TRAGOS CLASICOS");
   
 
   return (
     <div className="containerL">
     <Nav id={mesa} />
     <div className="sectioner">
-      <a href="#5">Vinos</a>
-      <a href="#2">Cerveza</a>
-      <a href="#3">Cocteleria clasica</a>
-      <a href="#4">Cocteleria especial</a>
+      <a href="#5">Tragos Clásicos</a>
+      <a href="#3">Latas</a>
+      <a href="#2">Biritas Tiradas</a>
+      <a href="#4">Heineken</a>
       <a href="#1">Sin alcohol</a>
 
     </div>
     <div className="conteinerLC">
       <div className="conteinerLB2 animate__animated  animate__zoomIn animate__faster">
         <img
-          src={pepsi}
+          src={coca}
           alt="promo"
           id="1"
           width="100%"
         />
         <Cards products={sAlcohol} />
         <img
-          src="https://i.pinimg.com/736x/51/48/19/5148190195f630dd1fca0fe1e7f9e5ff.jpg"
+          src={barril}
           alt="promo"
           id="2"
           width="100%"
         />
         <Cards products={cerveza} />
         <img
-          src="https://i.pinimg.com/736x/e9/d2/ff/e9d2ffac627aec3f38a4cead1465902d.jpg"
+          src={latras}
           alt="promo"
           id="3"
           width="100%"
         />
-        <Cards products={cocteleriaC} />
+        <Cards products={Latas} />
         <img
-            src=""
+            src={heineken}
           alt="promo"
           id="4"
           width="100%"
         />
-        <Cards products={cocteleriaE} />
+        <Cards products={Heineken} />
         <img
-           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMKWnQaMbHpO38lAez0fXk9lNMy5tzXJ9e3w&usqp=CAU"
+           src={tragosCla}
           alt="promo"
           id="5"
           width="100%"
         />
-        <Cards products={VINOS} />
+        <Cards products={TragosC} />
       </div>
     </div>
 <VerPedido id={mesa} />

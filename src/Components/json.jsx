@@ -16,12 +16,6 @@ export let jsonCafe = [
     section: "BIRRITAS",
   },
   {
-    name: "",
-    detail: "",
-    price: "",
-    section: "BIRRITAS",
-  },
-  {
     name: "REDIPAN",
     detail:
       "5.7% - IBU 40 |       Cerveza de color ámbar profundo acompañado por una espuma densa de gran retención. Cuerpo medio alto. Sabor a maltas caramelo y fuerte carácter a alcohol! y amargor acompañados por un sutil ahumado. El agregado de bourbon Jack Daniel's en madurado da notas a madera y vainilla hacia el final.",

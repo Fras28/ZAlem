@@ -12,7 +12,7 @@ export const Nav = (id) => {
   return (
     <div className="contNav">
       <div className="nav">
-        <Route path={`/:id/Landing/Cafeteria`}>
+        <Route path={`/:id/Landing/Wines`}>
           <Link className="backLink" to={`/${id.id}/Landing`}>
             <p className="back">
             <svg
