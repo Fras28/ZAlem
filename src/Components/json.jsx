@@ -630,7 +630,7 @@ export let jsonCafe = [
   // ---------------Food
   {
     name: "CHICKEN FINGERS",
-    detail: "bastoncitos de pollo con salsa picante   ------------ SALSAS ALIOLI | PICANTE | CRIOLLA | CHEDDAR",
+    detail: "bastoncitos de pollo con salsa picante ",
     price: "1600",
     section: "TAPEOS",
   },
@@ -774,7 +774,7 @@ export let jsonCafe = [
   },
   {
     name: "BAIRES",
-    detail: "pan de papa, medallon de carne, panceta y doble cheddar-------------todo incluye papas",
+    detail: "pan de papa, medallon de carne, panceta y doble cheddar",
     price: "1500",
     section: "ENTRE PANES",
   },

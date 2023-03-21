@@ -44,7 +44,7 @@ export const Comidas = (id) => {
           alt="promo"
           id="6"
         />
-        <Cards products={TAPEOS} />
+        <Cards products={TAPEOS} espesificaciones="(SALSAS ALIOLI | PICANTE | CRIOLLA | CHEDDAR)"/>
         <img
           src={p2}
           alt="promo"
@@ -74,7 +74,7 @@ export const Comidas = (id) => {
           alt="promo"
           id="1"
         />
-        <Cards products={EntreP} />
+        <Cards products={EntreP} espesificaciones="(TODOS INCLUYEN PAPAS)" />
         <img
           src="https://i0.wp.com/www.buenmercadoacasa.com/blog/wp-content/uploads/2016/05/mandamientos-salsas-buenmercadoacasa.jpg?resize=1080%2C675&ssl=1"
           alt="promo"
