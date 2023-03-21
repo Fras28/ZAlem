@@ -2,7 +2,7 @@ import React from 'react';
 import {  Route,Switch} from 'react-router-dom';
 import Landing from "./Components/Landing/LandingPage.jsx"
 import './App.css';
-import { Cafeteria } from './Components/Cafeteria/Cafeteria.jsx';
+import { Wines } from './Components/Wines/Wines.jsx';
 import { Foot } from './Components/Footer/Footer.jsx';
 import { Comidas } from './Components/Comidas/Comidas';
 import { Bag } from './Components/myBag/myBag.jsx';
@@ -18,7 +18,7 @@ function App() {
 <Switch>
           <Route exact path="/:id?" component={Inicio}/>
           <Route exact path="/:id/Landing" component={Landing}/>
-          <Route exact path="/:id/Landing/Cafeteria" component={Cafeteria}/>
+          <Route exact path="/:id/Landing/Wines" component={Wines}/>
           <Route exact path="/:id/Landing/Comidas" component={Comidas}/>
           <Route exact path="/:id/Landing/Bebidas" component={Bebidas}/>
           <Route exact path="/:id/Bag" component={Bag}/>

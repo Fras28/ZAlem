@@ -3,7 +3,7 @@ import { Card } from "./Card/Card";
 
 import "./Cards.css";
 
-export const Cards = ({ products }) => {
+export const Cards = ({ products, espesificaciones }) => {
   return (
     <div className="carta">
       <h2 className="titleSection">
@@ -19,6 +19,7 @@ export const Cards = ({ products }) => {
 
 
         {products[0]?.section.toUpperCase()}
+        <p className="espesifica">{espesificaciones}</p>
       </h2>
       <div className="rowsCard">
         {products?.map((e) => (

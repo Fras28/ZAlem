@@ -16,21 +16,25 @@ export const Comidas = (id) => {
 
   
   const TAPEOS = jsonCafe.filter((e) => e.section === "TAPEOS");
-  const PPrincipal = jsonCafe.filter((e) => e.section === "PLATOS PRINCIPALES");
-  const SANDWICH = jsonCafe.filter((e) => e.section === "SANDWICH");
-  const ENSALSADAS = jsonCafe.filter((e) => e.section === "ENSALSADAS");
+  const Papas = jsonCafe.filter((e) => e.section === "PAPAS");
+  const Principales = jsonCafe.filter((e) => e.section === "PRINCIPALES");
+  const Ensaladas = jsonCafe.filter((e) => e.section === "ENSALADAS");
   const PIZZAS = jsonCafe.filter((e) => e.section === "PIZZAS");
-  const Dips = jsonCafe.filter((e) => e.section === "DIPS DE SALSAS");
+  const EntreP = jsonCafe.filter((e) => e.section === "ENTRE PANES");
+  const Stacc = jsonCafe.filter((e) => e.section === "SIN T.A.C.C");
+  const Veggie = jsonCafe.filter((e) => e.section === "VEGGIE");
 
   return (
     <div className="containerL">
     <Nav id={mesa} />
     <div className="sectioner">
-      <a href="#1">Dips</a>
+      <a href="#.5">Veggie</a>
+      <a href="#0">Sin T.A.C.C</a>
+      <a href="#1">Entre Panes</a>
       <a href="#2">Pizzas</a>
       <a href="#3">Ensaladas</a>
-      <a href="#4">Sandiwchs</a>
-      <a href="#5">Plato principal</a>
+      <a href="#4">Principales</a>
+      <a href="#5">Papas</a>
       <a href="#6">Tapeos</a>
     </div>
     <div className="conteinerLC">
@@ -46,19 +50,19 @@ export const Comidas = (id) => {
           alt="promo"
           id="5"
         />
-        <Cards products={PPrincipal} />
+        <Cards products={Papas} />
         <img
           src="https://www.clarin.com/img/2022/06/10/fBqwr_GTM_720x0__1.jpg"
           alt="promo"
           id="4"
         />
-        <Cards products={SANDWICH} />
+        <Cards products={Principales} />
         <img
           src="https://cdn.colombia.com/gastronomia/2011/08/19/ensalada-cesar-3403.jpg"
           alt="promo"
           id="3"
         />
-        <Cards products={ENSALSADAS} />
+        <Cards products={Ensaladas} />
         <img
           src="https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/57FFY43SPZCDPP23T55ZNKWOVA.jpg"
           alt="promo"
@@ -70,7 +74,19 @@ export const Comidas = (id) => {
           alt="promo"
           id="1"
         />
-        <Cards products={Dips} />
+        <Cards products={EntreP} />
+        <img
+          src="https://i0.wp.com/www.buenmercadoacasa.com/blog/wp-content/uploads/2016/05/mandamientos-salsas-buenmercadoacasa.jpg?resize=1080%2C675&ssl=1"
+          alt="promo"
+          id="0"
+        />
+        <Cards products={Stacc} />
+        <img
+          src="https://i0.wp.com/www.buenmercadoacasa.com/blog/wp-content/uploads/2016/05/mandamientos-salsas-buenmercadoacasa.jpg?resize=1080%2C675&ssl=1"
+          alt="promo"
+          id=".5"
+        />
+        <Cards products={Veggie} />
       </div>
     </div>
 <VerPedido id={mesa} />

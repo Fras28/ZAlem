@@ -65,7 +65,7 @@ export default function LandingPage(url) {
             to={
               url.location.pathname === "/"
                 ? `/Cafeteria`
-                : `${url.location.pathname}/Cafeteria`
+                : `${url.location.pathname}/Wines`
             }
           >
             <div className="titInicio">
