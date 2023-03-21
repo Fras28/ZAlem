@@ -7,7 +7,9 @@ import { VerPedido } from "../BtnBag/BtnBag.jsx";
 import p1 from "../assets/comida1.webp"
 import p2 from "../assets/comida2.webp"
 import papas from "../assets/papas.jpg"
-
+import entreP from "../assets/entreP.jpg"
+import veggie from "../assets/veggie.jpg"
+import principal from "../assets/milaCaballo.webp"
 export const Comidas = (id) => {
 
 
@@ -53,7 +55,7 @@ export const Comidas = (id) => {
         />
         <Cards products={Papas} />
         <img
-          src="https://www.clarin.com/img/2022/06/10/fBqwr_GTM_720x0__1.jpg"
+          src={principal}
           alt="promo"
           id="4"
         />
@@ -71,19 +73,19 @@ export const Comidas = (id) => {
         />
         <Cards products={PIZZAS} />
         <img
-          src="https://i0.wp.com/www.buenmercadoacasa.com/blog/wp-content/uploads/2016/05/mandamientos-salsas-buenmercadoacasa.jpg?resize=1080%2C675&ssl=1"
+          src={entreP}
           alt="promo"
           id="1"
         />
         <Cards products={EntreP} espesificaciones="(TODOS INCLUYEN PAPAS)" />
         <img
-          src="https://i0.wp.com/www.buenmercadoacasa.com/blog/wp-content/uploads/2016/05/mandamientos-salsas-buenmercadoacasa.jpg?resize=1080%2C675&ssl=1"
+          src="https://municipiosanjuan.gob.ar/media/k2/items/cache/fc2062aef352f80dc2215f346ba9ce28_XL.jpg"
           alt="promo"
           id="0"
         />
         <Cards products={Stacc} />
         <img
-          src="https://i0.wp.com/www.buenmercadoacasa.com/blog/wp-content/uploads/2016/05/mandamientos-salsas-buenmercadoacasa.jpg?resize=1080%2C675&ssl=1"
+          src={veggie}
           alt="promo"
           id=".5"
         />

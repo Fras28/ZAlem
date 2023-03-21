@@ -793,7 +793,7 @@ export let jsonCafe = [
   {
     name: "MEGA BAIRES",
     detail: "pan de papa. triple carne, triple cheddar, panceta, cebolla caramelizada y huevo frito",
-    price: "",
+    price: "1750",
     section: "ENTRE PANES",
   },
   {
