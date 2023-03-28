@@ -16,7 +16,7 @@ export default function LandingPage(url) {
   // }
 
   return (
-    <div className="animate__animated  animate__zoomIn">
+    <div className="animate__animated  animate__zoomIn ">
       <div className="naviLanding titCasa ">
         <div className="logoL">
           <NavLink to={`/${id}`}>
