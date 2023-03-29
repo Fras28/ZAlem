@@ -635,12 +635,6 @@ export let jsonCafe = [
     section: "TAPEOS",
   },
   {
-    name: "J&Q Stick",
-    detail: "Bastoncitos de muzza & jamon con salsa alioli",
-    price: "0",
-    section: "TAPEOS",
-  },
-  {
     name: "Empanadas veganas",
     detail: "(4) Empanaditas de verduras salteadas, zanahoria, morron, cebolla, berenjena & champigniones.",
     price: "1600",
@@ -662,12 +656,6 @@ export let jsonCafe = [
     name: "Rabas",
     detail: "Rabas con limon & dip salsa aleoli",
     price: "2500",
-    section: "TAPEOS",
-  },
-  {
-    name: "Langostinos",
-    detail: "Langostinos rebozados con mayonesa de pimientos rojos ahumados.",
-    price: "0",
     section: "TAPEOS",
   },
   {

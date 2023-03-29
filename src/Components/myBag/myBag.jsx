@@ -65,7 +65,7 @@ const toTop = ()=>{
               (e) => e.name + "$" + e.price+"   "
             )} size={200}/>
              <div className="wsspTarj">
-          <select
+          {/*  <select
             className="selectP"
             onChange={metodoPago}
             value={pago.payment}
@@ -77,7 +77,7 @@ const toTop = ()=>{
             <option>Tarjeta</option>
             <option>QR</option>
           </select>
-          <a
+         <a
             href={`http://wa.me/542914446222?text= Mensaje con mi pedido ➤ ${favProd.map(
               (e) => e.name + "$" + e.price + ", "
             )} Total = $ ${total}, "${pago.payment}" , estamos en la mesa ${
@@ -101,7 +101,7 @@ const toTop = ()=>{
                 />
               </svg>
             </button>
-          </a>{" "}
+          </a>{" "} */}
         </div>
       {/* {isNaN(id.match.params.id) === true ? (
         <p className="textNoMesa">
