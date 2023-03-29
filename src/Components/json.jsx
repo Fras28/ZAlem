@@ -739,7 +739,7 @@ export let jsonCafe = [
   {
     name: "Wok de Pollo",
     detail: "fideos de arroz, verduras salteadas, pollo, almendras, salsa de soja y semillas de sesamo",
-    price: "1600",
+    price: "2300",
     section: "PRINCIPALES",
   },
   {
