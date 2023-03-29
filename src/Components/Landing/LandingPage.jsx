@@ -92,7 +92,7 @@ export default function LandingPage(url) {
         >
           <path d="M59 0.999995L0 1" stroke="#0B3446" />
         </svg>
-        <p className="naviTit2"> Seguinos en </p>
+        <p className="naviTit5">Miércoles a Domingo  19 al cierre </p>
         <svg
           width="59"
           height="2"

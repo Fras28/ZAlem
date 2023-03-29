@@ -40,6 +40,9 @@
   color: #0d4862;
   font-weight: 1000;
 }
+.naviTit5{
+  color:#0d4862;
+}
 .naviLanding {
   display: flex;
   align-items: center;
