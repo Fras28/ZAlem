@@ -5,7 +5,7 @@ export const Foot = () => {
   return (
     <footer className="footy animate__animated  animate__zoomIn">
       <div className="linkss">
-        <a className="links" href="http://wa.me/5429215729501?text=Hola me gusto la carta, quisiera tener mas informacion " Target="_blank">
+        <a className="links" href="http://wa.me/542914446222 " Target="_blank">
           <svg
             className="linkC"
             width="46"

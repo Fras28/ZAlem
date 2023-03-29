@@ -78,7 +78,7 @@ const toTop = ()=>{
             <option>QR</option>
           </select>
           <a
-            href={`http://wa.me/542915729501?text=Hola Franco Mensaje de mi pedido ➤ ${favProd.map(
+            href={`http://wa.me/542914446222?text= Mensaje con mi pedido ➤ ${favProd.map(
               (e) => e.name + "$" + e.price + ", "
             )} Total = $ ${total}, "${pago.payment}" , estamos en la mesa ${
               id.match.params.id
