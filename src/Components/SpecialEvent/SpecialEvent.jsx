@@ -34,7 +34,7 @@ export const SpecialEvent = (id) => {
               <a
 
                 className="links"
-                href="http://wa.me/542921422999?text=Hola Quisiera Hacer una reserva para la cena de Naviidad "
+                href="http://wa.me/542914446222?text=Hola Quisiera Hacer una reserva para la cena de Naviidad "
                 Target="_blank"
               >
                 <svg
