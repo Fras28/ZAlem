@@ -15,7 +15,6 @@ h1{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #0B3446;
   background: linear-gradient(-45deg, #0B3446, #025ca7, #0B3446);
   animation: gradient-bg 20s ease infinite;
   z-index: 9999;

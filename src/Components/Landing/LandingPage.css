@@ -47,7 +47,8 @@
   min-height: 100px;
   font-size: 1.3rem;  
   margin-bottom: 16px;
-  background-color: #0B3446;
+  background: linear-gradient(-45deg, #0B3446, #025ca7, #0B3446);
+  animation: gradient-bg 20s ease infinite;
   box-shadow: 0px 0px 8px #135a78;
 }
 .navi2{
