@@ -49,6 +49,18 @@ export default function LandingPage(url) {
 
       <div className="conteinerLB2  ">
         <div className="rowsCardL">
+          <NavLink className="navLink" to={`${url.location.pathname}/Bebidas`}>
+          <div className="titInicio">
+            <img src="https://pulsocervecero.com/wp-content/uploads/2022/07/Ortuzar.jpg"  alt=""/>
+            <p>DRINKS</p>
+          </div>
+          </NavLink>
+          <NavLink className="navLink" to={`${url.location.pathname}/Comidas`}>
+            <div className="titInicio">
+              <img src={comidas} alt=""/>
+              <p>FOOD</p>
+            </div>
+          </NavLink>
           <NavLink
             className="navLink"
             to={
@@ -61,18 +73,6 @@ export default function LandingPage(url) {
               <img src={wines} alt="fotito" />
               <p>WINES</p>
             </div>
-          </NavLink>
-          <NavLink className="navLink" to={`${url.location.pathname}/Comidas`}>
-            <div className="titInicio">
-              <img src={comidas} alt=""/>
-              <p>FOOD</p>
-            </div>
-          </NavLink>
-          <NavLink className="navLink" to={`${url.location.pathname}/Bebidas`}>
-          <div className="titInicio">
-            <img src="https://pulsocervecero.com/wp-content/uploads/2022/07/Ortuzar.jpg"  alt=""/>
-            <p>DRINKS</p>
-          </div>
           </NavLink>
           <NavLink to={`${url.location.pathname}/SpecialEvent`}>
           <div className="titInicio">
