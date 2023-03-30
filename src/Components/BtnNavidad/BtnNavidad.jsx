@@ -51,24 +51,15 @@ export default function AlertDialogSlide() {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle className="infoNavi">
-          SOMOS MORTON SOLUCIONES{" "}
+          ZETA ALEM{" "}
           <button className="exit" onClick={handleClose}>
             x
           </button>
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            ¿Te gustaría revolucionar la experiencia de tus clientes en tu
-            comercio? ¡Con nuestra App, es posible! Nuestra herramienta fue
-            creada con el objetivo de mejorar y agilizar la atención al cliente.
-            ¿Cómo lo hacemos? Al ofrecer la posibilidad de ver la carta y hacer
-            el pedido y el pago a través de la App, tus clientes podrán tomar su
-            decisión de manera más rápida y cómoda, sin tener que esperar a que
-            un mesero se acerque a ellos. Además, al reducir el tiempo que tus
-            clientes pasan ocupando la mesa sin consumir, podrás aumentar la
-            rotación de clientes y, por ende, las ganancias de tu negocio. ¡No
-            esperes más y conviértete en el dueño de un negocio más moderno y
-            eficiente gracias a nuestra App!
+            Desde 1993 en la ciudad de Bahia Blanca . Haciendo tu pizza favorita
+            🍕❤
           </DialogContentText>
         </DialogContent>
         <DialogActions> </DialogActions>

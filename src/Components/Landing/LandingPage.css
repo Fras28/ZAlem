@@ -50,9 +50,23 @@
   min-height: 100px;
   font-size: 1.3rem;  
   margin-bottom: 16px;
-  background: linear-gradient(-45deg, #0B3446, #025ca7, #0B3446);
-  animation: gradient-bg 20s ease infinite;
+  background: linear-gradient(-45deg, #024B40, #069a83, #023c33);
+  animation: gradient-bg 1s ease infinite;
   box-shadow: 0px 0px 8px #135a78;
+}
+@keyframes gradient-bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.LogoNavi{
+ height: 90px;
 }
 .navi2{
   display: flex;
@@ -62,7 +76,7 @@
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 1rem;
-  margin-top: 16px;
+
 }
 .navi2 >p{
  margin:0 1rem 0 1rem

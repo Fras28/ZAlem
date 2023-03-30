@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import AlertDialogSlide from "../BtnNavidad/BtnNavidad";
 import "./LandingStart.css";
+import logo from "../assets/ZLogo.png"
 
 export const Inicio = (url) => {
 
@@ -25,7 +26,7 @@ export const Inicio = (url) => {
       <div className="marcaLanging ">
 
 
-     <b className="logoTitle titStart">BAIRES</b>
+   <img className="LogoStart" src={logo} alt="LOGUITO"/>
       </div>
         </NavLink>
       <div className="btnEnter">

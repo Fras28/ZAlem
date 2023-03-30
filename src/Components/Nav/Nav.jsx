@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Nav.css";
 import { Route } from "react-router-dom";
+import logo from "../assets/ZLogo.png"
 
 export const Nav = (id) => {
   const volver = () => {
@@ -140,7 +141,8 @@ export const Nav = (id) => {
         </Route>
         <div className="morton foolishIn">
           <NavLink to={`/${id.id}`}>
-<b className="logoTitle">BAIRES</b>
+<img src={logo} alt="loguito nav" className="LogoNavi"/>
+
           </NavLink>
         </div>
       </div>

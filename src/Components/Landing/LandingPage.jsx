@@ -5,6 +5,7 @@ import comidas from "../assets/food.webp";
 import { VerPedido } from "../BtnBag/BtnBag";
 import wines from "../assets/wines.webp"
 import events from "../assets/events.webp"
+import logo from "../assets/ZLogo.png"
 
 
 export default function LandingPage(url) {
@@ -20,7 +21,7 @@ export default function LandingPage(url) {
       <div className="naviLanding titCasa ">
         <div className="logoL">
           <NavLink to={`/${id}`}>
-   <b className="logoTitle">BAIRES</b>
+  <img src={logo} alt="" className="LogoNavi"/>
           </NavLink>
         
         </div>
