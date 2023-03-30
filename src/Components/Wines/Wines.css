@@ -1,11 +1,11 @@
 .titleSection {
   font-size: 24px;
-  color:  #0d4862;
+  color: #024b40;
   text-align: left;
-  padding-left:4px;
+  padding-left: 4px;
   font-weight: 800;
-  }
-
+  text-shadow: #18a59d 0 0 8px;
+}
 
 .cafeBg {
   border-radius: 20px;
@@ -31,24 +31,26 @@
   object-fit: cover;
   object-position: center;
   max-height: 150px;
-
 }
-.containerL {
+/* .containerL {
   margin-top: 100px;
-}
+} */
 .sectioner {
   white-space: pre;
   overflow: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   align-items: center;
   padding-bottom: 0.3rem;
   position: sticky;
-  top: 79.5px;
+  top: 0px;
   width: 100%;
   z-index: 9999;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: rgba(245, 245, 245, 0.567);
+
 }
 ::-webkit-scrollbar {
   display: none;
@@ -58,19 +60,18 @@
   font-weight: 600;
   border-radius: 16px;
   margin-left: 8px;
-  border: 1px solid #000000;
+  border: double 2px #18a59d;
   border-radius: 24px;
   text-decoration: none;
   color: black;
   padding: 12px 24px;
   background-color: white;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
 }
 .sectioner > a:active {
   background-color: #0b344683;
   border-radius: orange;
 }
-
 
 /* display: flex;
 
@@ -82,10 +83,10 @@ border-radius: 24px; */
 
 /* justify-content: flex-start; */
 @media (max-width: 600px) {
-  .sectioner{
+  .sectioner {
     justify-content: flex-start;
   }
-  .leftInfo{
+  .leftInfo {
     padding-left: 0;
   }
 }

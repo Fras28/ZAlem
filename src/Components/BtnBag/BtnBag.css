@@ -8,7 +8,7 @@
     height: 50px;
     display: flex;
     border-radius: 16px;
-    background-color: #0B3446;
+    background: linear-gradient(-45deg, #024B40, #069a83, #023c33);
     border: outset #1d6c8d 2px;
     margin: auto;
     align-items: center;
