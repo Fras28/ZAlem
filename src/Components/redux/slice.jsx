@@ -7,6 +7,7 @@ const initialState = {
   allProduct: [],
   copyallProducts: [],
   favProd: [],
+  orderStatus:[{status:"forHere"}]
 };
 
 export const dataSlice = createSlice({
@@ -34,6 +35,10 @@ export const dataSlice = createSlice({
         .filter((e) => e.name.includes(action.payload) === true)
         .slice(0, 10);
     },
+    OrderStat:(state, action) => {
+      state.orderStatus = [action.payload]
+      console.log(state.orderStatus)
+    }
   },
 });
 
@@ -75,9 +80,21 @@ console.log(pedido, "este es el pedido slice")
   }
 }
 
+
+export const asyncOrderStat = (orderStat)=>{
+  console.log(orderStat, "este es el estado del tipo de pedido");
+    return async function ( dispatch ){
+      try{
+          return dispatch(OrderStat({status:orderStat}))
+      }catch(error){
+        console.log(error, "from Order")
+      }
+    }
+  }
+  
 //----------------------------------------------------------------------------------------------------------------
 
-export const { allProducts, favProducts, cancelBagProducts, SearchProducts } =
+export const { allProducts, favProducts, cancelBagProducts, SearchProducts, OrderStat } =
   dataSlice.actions;
 
 export default dataSlice.reducer;

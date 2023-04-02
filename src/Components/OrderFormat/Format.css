@@ -1,0 +1,61 @@
+
+.switchsBar{
+    display: flex;
+}
+.switchsBar > p{
+    font-size: .8rem;
+}
+
+.backSwitch{
+  animation: gradient-bg 1s ease infinite;
+  display: flex;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+@keyframes gradient-bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.Chek{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 32%;
+}
+
+.box{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 2px solid #069a83;
+  appearance: none;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+.box:checked{
+  background-color: #069a83;
+  box-shadow: 0px 0px 10px #069a83;
+}
+
+label::before{
+  border-radius: 5px;
+}
+
+.styleForm{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.inputStatus{
+  border-radius: 24px;
+}
+.inputStatus::placeholder{
+padding-left: 5%;
+}
