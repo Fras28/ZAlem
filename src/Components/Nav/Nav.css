@@ -18,9 +18,9 @@ h1{
   /* z-index: 9999; */
   justify-content: space-evenly;
   padding-bottom: 2%;
-  background: linear-gradient(-45deg, #024B40, #069a83, #023c33);
-  animation: gradient-bg 1s ease infinite;
-  box-shadow: 0px 0px 8px #135a78;
+  background-image: url("../assets/np_Flag\ of\ Japan\ made\ of\ rice\ and\ tuna\ meat\ texture_4ARV6b_free.jpg");
+  animation: gradient-bg 50s ease infinite;
+  box-shadow: 0px 0px 8px black;
 }
 @keyframes gradient-bg {
 	0% {

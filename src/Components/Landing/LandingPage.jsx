@@ -52,14 +52,14 @@ export default function LandingPage(url) {
         <div className="rowsCardL">
           <NavLink className="navLink" to={`${url.location.pathname}/Bebidas`}>
           <div className="titInicio">
-            <img src="https://pulsocervecero.com/wp-content/uploads/2022/07/Ortuzar.jpg"  alt=""/>
-            <p>DRINKS</p>
+            <img src="https://thumbnails.production.thenounproject.com/BF2Y0vpUKv5m9MIG37HQtzooDqs=/fit-in/1000x1000/photos.production.thenounproject.com/photos/sushi_on_plates-scopio-1f9c2352-172c-4230-8387-b9c571640485.JPG"  alt=""/>
+            <p>PARA 1</p>
           </div>
           </NavLink>
           <NavLink className="navLink" to={`${url.location.pathname}/Comidas`}>
             <div className="titInicio">
-              <img src={comidas} alt=""/>
-              <p>FOOD</p>
+              <img src="https://thumbnails.production.thenounproject.com/3mF3sHYfTiWf6JIBe58vonElr9g=/fit-in/1000x1000/photos.production.thenounproject.com/photos/japanese_sushi_on_colorful_ceramic_plate-scopio-185d6693-1296-4b7f-af5d-451a93cb5612.jpg" alt=""/>
+              <p>PARA 2</p>
             </div>
           </NavLink>
           <NavLink
@@ -71,14 +71,14 @@ export default function LandingPage(url) {
             }
           >
             <div className="titInicio">
-              <img src={wines} alt="fotito" />
-              <p>WINES</p>
+              <img src="https://thumbnails.production.thenounproject.com/FbeNV9RzZOize7gunkR5fKCOm5M=/fit-in/1000x1000/photos.production.thenounproject.com/photos/fresh_sashimi_on_a_plate-scopio-3b656329-023f-4d24-9823-0ffdd0ae9d6b.jpg" alt="fotito" />
+              <p>PARA 3</p>
             </div>
           </NavLink>
           <NavLink to={`${url.location.pathname}/SpecialEvent`}>
           <div className="titInicio">
-            <img src={events} alt="" />
-            <p>EVENTS</p>
+            <img src="https://thumbnails.production.thenounproject.com/by-S7yI9qns-mkNA7IR7aoTrnc0=/fit-in/1000x1000/photos.production.thenounproject.com/photos/570231FB-3237-4852-A128-7BA2C260552A.jpg" alt="" />
+            <p>PARA 4</p>
           </div>
           </NavLink>
         </div>
