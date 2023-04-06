@@ -42,19 +42,19 @@ export const Comidas = (id) => {
     <div className="conteinerLC">
       <div className="conteinerLB2 animate__animated  animate__zoomIn animate__faster">
         <img
-          src={p1}
+          src="https://images.ecestaticos.com/wVsAKm6mXTx5jXrJxP58Do7Yg4Y=/549x0:2690x1507/992x700/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fd96%2F010%2F12c%2Fd9601012cba6ec76e09f9cbb8890a1c6.jpg"
           alt="promo"
           id="6"
         />
         <Cards products={TAPEOS} espesificaciones="(SALSAS ALIOLI | PICANTE | CRIOLLA | CHEDDAR)"/>
         <img
-          src={papas}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7hAqgSWUTR0CNzDmunDk3nK6bMwMhAsBRw&usqp=CAU"
           alt="promo"
           id="5"
         />
         <Cards products={Papas} />
         <img
-          src={principal}
+          src="https://izzycooking.com/wp-content/uploads/2020/10/Salmon-Nigiri-thumbnail-500x500.jpg"
           alt="promo"
           id="4"
         />
@@ -66,7 +66,7 @@ export const Comidas = (id) => {
         />
         <Cards products={Ensaladas} />
         <img
-          src="https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/57FFY43SPZCDPP23T55ZNKWOVA.jpg"
+          src="https://images.hola.com/imagenes/cocina/recetas/20200221161231/niguiri-sushi-de-salmon/0-787-33/niguiri-sushi-de-salmon-t.jpg?tx=w_680"
           alt="promo"
           id="2"
         />

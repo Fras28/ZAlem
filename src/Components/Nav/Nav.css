@@ -1,56 +1,43 @@
-
-h1{
-    color: rgb(255, 255, 255) ;
-    margin-top: 0;
-    margin-bottom: 0;
+h1 {
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.subName{
-    color: white;
-    margin-top: 0;
+.subName {
+  color: white;
+  margin-top: 0;
 }
 
-
-.nav{
+.nav {
   display: flex;
-  /* position: fixed;
-  top: 0; */
   width: 100%;
-  /* z-index: 9999; */
   justify-content: space-evenly;
-  padding-bottom: 2%;
   background-image: url("../assets/np_Flag\ of\ Japan\ made\ of\ rice\ and\ tuna\ meat\ texture_4ARV6b_free.jpg");
   animation: gradient-bg 50s ease infinite;
   box-shadow: 0px 0px 8px black;
 }
 @keyframes gradient-bg {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-  /*============= Search bar ==========*/
-.back{
-
-  margin-left: .5rem;
+/*============= Search bar ==========*/
+.back {
+  margin-left: 0.5rem;
   margin-top: 10px;
-  /* background-color: rgb(255, 255, 255);
-  padding: 4px 4px 4px 4px;
-  border-radius: 24px 24px 24px 24px ;
-  box-shadow: 1px 2px 1px black; */
 }
-.back > svg{
+.back > svg {
   margin-bottom: -2.5px;
-  filter: drop-shadow(8px 8px 4px black );
-  
-
+  filter: drop-shadow(8px 8px 4px black);
 }
-.morton{
-  margin-top: 10px;
+.morton {
+  margin-top: 3px;
   background-color: black;
   width: 200px;
   height: 150px;
@@ -58,29 +45,28 @@ h1{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-
 }
-.backLink{
+.backLink {
   display: none;
 }
 
-.bakBagBtn{
+.bakBagBtn {
   display: none;
 }
 @media (max-width: 600px) {
-  .back:hover{
+  .back:hover {
     box-shadow: 1px 2px 1px black;
   }
-  .nav{
-    justify-content: flex-start
+  .nav {
+    justify-content: flex-start;
   }
-  .backLink{
+  .backLink {
     display: block;
-
   }
-  .morton{
-    margin-left: 15%;}
-    .bakBagBtn{
-      display: block;
-    }
+  .morton {
+    margin-left: 15%;
+  }
+  .bakBagBtn {
+    display: block;
+  }
 }

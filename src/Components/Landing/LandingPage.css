@@ -1,5 +1,3 @@
-
-
 .conteinerLB {
   height: 70vh;
   display: flex;
@@ -27,82 +25,80 @@
   box-shadow: 0px 0px 8px #0d4862;
 }
 
-.titInicio >img{
+.titInicio > img {
   object-fit: cover;
   width: 100%;
   height: 70%;
-  border-radius:16px 16px 0 0 ;
+  border-radius: 16px 16px 0 0;
 }
-.titInicio >p{
+.titInicio > p {
   margin: auto;
   font-size: 1.5rem;
   padding: 0 0.5rem;
   color: black;
   font-weight: 1000;
-  font-family: 'MiFuentePersonalizada';
+  font-family: "MiFuentePersonalizada";
 }
-.naviTit5{
-  color:#0d4862;
+.naviTit5 {
+  color: #0d4862;
 }
 .naviLanding {
   display: flex;
   align-items: center;
   flex-direction: column;
   min-height: 100px;
-  font-size: 1.3rem;  
+  font-size: 1.3rem;
   margin-bottom: 16px;
   background-image: url("../assets/np_Flag\ of\ Japan\ made\ of\ rice\ and\ tuna\ meat\ texture_4ARV6b_free.jpg");
   animation: gradient-bg 50s ease infinite;
   box-shadow: 0px 0px 8px black;
 }
 @keyframes gradient-bg {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.LogoNavi{
- height: 90px;
+.LogoNavi {
+  height: 90px;
 }
-.logoL{
+.logoL {
   display: flex;
-    background-color: black;
-    width: 200px;
-    height: 150px;
-    border-radius: 70%;
-    justify-content: center;
-    align-items: center
+  background-color: black;
+  width: 200px;
+  height: 150px;
+  border-radius: 70%;
+  justify-content: center;
+  align-items: center;
 }
 
-.navi2{
+.navi2 {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 1rem;
-
 }
-.navi2 >p{
- margin:0 1rem 0 1rem
+.navi2 > p {
+  margin: 0 1rem 0 1rem;
 }
 
-.naviTit2{
-display:flex ;
-font-weight: 500;
-color: black;
-font-weight: 800;
+.naviTit2 {
+  display: flex;
+  font-weight: 500;
+  color: black;
+  font-weight: 800;
 }
 .titCasa {
   display: flex;
 }
-
 
 .navLink {
   text-decoration: none;
@@ -130,8 +126,11 @@ a {
   text-decoration: none;
 }
 
-.leta1 , .leta2 , .leta3 , .leta4{
-font-weight: 800;
+.leta1,
+.leta2,
+.leta3,
+.leta4 {
+  font-weight: 800;
 }
 
 .rowsCardL {
@@ -143,26 +142,24 @@ font-weight: 800;
   margin-bottom: 7px;
 }
 
-
-
-.evImg{
+.evImg {
   object-fit: cover;
   object-position: bottom;
 }
-.eventsL > .titInicio{
+.eventsL > .titInicio {
   width: 86%;
   margin: auto;
   height: 157px;
 }
-.especial{
+.especial {
   border: solid goldenrod 1px;
   box-shadow: 0px 0px 8px goldenrod;
 }
-.logoTitle{
+.logoTitle {
   color: white;
   font-size: 60px;
   font-weight: 800;
-  text-shadow:#000000 5px 5px 10px;
+  text-shadow: #000000 5px 5px 10px;
 }
 @media (max-width: 600px) {
   .titInicio:hover {
