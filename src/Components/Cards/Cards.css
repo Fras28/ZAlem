@@ -7,6 +7,7 @@
 
 .titleSection > svg{
 margin-bottom: 0;
+margin-right: .5rem;
 }
 
 .titleSection > svg {
@@ -14,6 +15,6 @@ margin-bottom: 0;
 }
 .espesifica{
     font-size: 16px;
-
+  
     font-weight: 400;
 }

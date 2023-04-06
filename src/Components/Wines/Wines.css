@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "MiFuentePersonalizada";
+  src: url("../assets/Japanese2020-axanm.ttf") format("woff2");
+}
+
 .titleSection {
   font-size: 24px;
   color: black;
   text-align: left;
   padding-left: 4px;
   font-weight: 800;
+  font-family: MiFuentePersonalizada;
 
 }
 

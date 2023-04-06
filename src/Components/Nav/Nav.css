@@ -51,6 +51,14 @@ h1{
 }
 .morton{
   margin-top: 10px;
+  background-color: black;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
 }
 .backLink{
   display: none;
@@ -71,7 +79,7 @@ h1{
 
   }
   .morton{
-    margin-left: 21%;}
+    margin-left: 15%;}
     .bakBagBtn{
       display: block;
     }
