@@ -3,8 +3,8 @@
   margin-bottom: 0;
   margin-top: 0.5rem;
   text-align: left;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-family: "MiFuentePersonalizada";
 }
 .detProd {
   color: black;
@@ -31,7 +31,6 @@
   display: flex;
 }
 .btnPlus {
-
   width: 100%;
   height: 100%;
   border-radius: 16px;
@@ -100,8 +99,8 @@
 }
 .price{
 margin: 0;
-font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+font-family: "MiFuentePersonalizada";
+  font-weight: 100;
   color:rgb(107, 48, 48);
 }
 .btn-svg {

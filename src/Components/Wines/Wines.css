@@ -62,8 +62,8 @@
   display: none;
 }
 .sectioner > a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-family: "MiFuentePersonalizada";
+  font-weight: 100;
   border-radius: 16px;
   margin-left: 8px;
   border: double 2px black;
