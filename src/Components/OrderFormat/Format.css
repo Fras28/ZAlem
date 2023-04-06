@@ -34,14 +34,14 @@
   width: 25px;
   height: 25px;
   cursor: pointer;
-  border: 2px solid #069a83;
+  border: 2px solid salmon;
   appearance: none;
   border-radius: 50%;
   background-color: whitesmoke;
 }
 .box:checked{
-  background-color: #069a83;
-  box-shadow: 0px 0px 10px #069a83;
+  background-color:black;
+
 }
 
 label::before{
