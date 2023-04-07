@@ -3,8 +3,8 @@
   margin-bottom: 0;
   margin-top: 0.5rem;
   text-align: left;
-  font-weight: 100;
-  font-family: "MiFuentePersonalizada";
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 .detProd {
   color: black;
@@ -99,7 +99,7 @@
 }
 .price{
 margin: 0;
-font-family: "MiFuentePersonalizada";
+font-family: "Montserrat", sans-serif;
   font-weight: 100;
   color:rgb(107, 48, 48);
 }
