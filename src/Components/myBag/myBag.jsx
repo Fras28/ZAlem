@@ -63,11 +63,7 @@ export const Bag = (id) => {
           <div><b>Direccion:</b> <input className="inputStatus" placeholder="Donado 128" type="text"/></div> 
           <div><b>Dpto:</b> <input className="inputStatus" placeholder="PB - C" type="text"/></div> 
           </div> :
-   <p className="textHere">Al final de esta pagina se a generado un codigo QR para que el mozo tome su pedido</p>}
-      <div className="contBag animate__animated   animate__rollIn animate__faster">
-        <CardsBag products={result} />
-      </div>
-
+   <p className="textHere">Muestrele este QR al mozo </p>}
       {orderStatus[0].status ==="forHere"  ? (
         <div>
           <QRCode
@@ -163,6 +159,10 @@ export const Bag = (id) => {
         </div>
         </div>
       )}
+      <div className="contBag animate__animated   animate__rollIn animate__faster">
+        <CardsBag products={result} />
+      </div>
+
 
     </div>
   );
