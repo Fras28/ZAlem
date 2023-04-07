@@ -4,11 +4,8 @@ import "./Comidas.css";
 import { jsonCafe } from "../json";
 import { Nav } from "../Nav/Nav.jsx";
 import { VerPedido } from "../BtnBag/BtnBag.jsx";
-import p1 from "../assets/comida1.webp"
-import papas from "../assets/papas.jpg"
 import entreP from "../assets/entreP.jpg"
 import veggie from "../assets/veggie.jpg"
-import principal from "../assets/milaCaballo.webp"
 export const Comidas = (id) => {
 
 

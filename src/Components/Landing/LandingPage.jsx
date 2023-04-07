@@ -91,7 +91,7 @@ export default function LandingPage(url) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M59 0.999995L0 1" stroke="#0B3446" />
+          <path d="M59 0.999995L0 1" stroke="black" />
         </svg>
         <p className="naviTit5">Miércoles a Domingo  19 al cierre </p>
         <svg
@@ -101,7 +101,7 @@ export default function LandingPage(url) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M59 0.999995L0 1" stroke="#0B3446" />
+          <path d="M59 0.999995L0 1" stroke="black" />
         </svg>
       </div>
       <VerPedido id={url.location.pathname.slice(1,3)}/>

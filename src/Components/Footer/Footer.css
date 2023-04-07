@@ -9,7 +9,7 @@ margin: 16px 0 16px 0;
 
 
 .redes{
-    fill:#024B40;
+    fill:black;
 }
 .wap{
     fill: #03C100;
@@ -23,5 +23,5 @@ margin: 16px 0 16px 0;
 margin-top: 0;
 }
 .linkC:hover .redes{
-    fill:#0b34466d;
+    fill:#0b34465d;
 }

@@ -58,6 +58,12 @@ export const Bag = (id) => {
     <div className="backBag">
       <Nav id={id.match.params.id} />
       <OrderStatusSwitches />
+   {   orderStatus[0].status ===  "takeAway"  ? 
+          <div><b>Nombre:</b> <input className="inputStatus" type="text"/></div> :orderStatus[0].status ===  "delivery"  ? <div><div><b>Nombre:</b> <input className="inputStatus" placeholder="Leonel Messi" type="text"/></div> 
+          <div><b>Direccion:</b> <input className="inputStatus" placeholder="Donado 128" type="text"/></div> 
+          <div><b>Dpto:</b> <input className="inputStatus" placeholder="PB - C" type="text"/></div> 
+          </div> :
+   <p></p>}
       <div className="contBag animate__animated   animate__rollIn animate__faster">
         <CardsBag products={result} />
       </div>
@@ -72,7 +78,6 @@ export const Bag = (id) => {
            </div>
       ) :orderStatus[0].status ===  "takeAway"  ? (
         <div>
-          <div><b>Nombre:</b> <input className="inputStatus" type="text"/></div> 
         <div className="wsspTarj">
           <select
             className="selectP"
@@ -116,10 +121,7 @@ export const Bag = (id) => {
       ) :  (
         
         <div className="styleForm">
-        <div><b>Nombre:</b> <input className="inputStatus" placeholder="Leonel Messi" type="text"/></div> 
-        <div><b>Direccion:</b> <input className="inputStatus" placeholder="Donado 128" type="text"/></div> 
-        <div><b>Dpto:</b> <input className="inputStatus" placeholder="PB - C" type="text"/></div> 
-
+       
         <div className="wsspTarj">
           <select
             className="selectP"

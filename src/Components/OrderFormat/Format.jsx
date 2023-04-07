@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { asyncOrderStat, asyncorderStat } from "../redux/slice";
+import { asyncOrderStat} from "../redux/slice";
 import "./Format.css";
 
 const OrderStatusSwitches = () => {
@@ -51,7 +51,7 @@ const OrderStatusSwitches = () => {
           id="ch1"
           type="checkbox"
           checked={orderStatus[0].status === "delivery"}
-          onChange={handleDeliveryChange}
+          onClick={handleDeliveryChange}
         />
         <div class="transition"></div>
       </label>
@@ -64,7 +64,7 @@ const OrderStatusSwitches = () => {
            id="ch1"
            type="checkbox"
            checked={orderStatus[0].status === "takeAway"}
-           onChange={handleTakeAwayChange}
+           onClick={handleTakeAwayChange}
            />
       </label>
            <b> Take Away</b> 
@@ -77,7 +77,7 @@ const OrderStatusSwitches = () => {
            id="ch1"
           type="checkbox"
           checked={orderStatus[0].status === "forHere"}
-          onChange={handleForHereChange}
+          onClick={handleForHereChange}
           />
       </label>
           <b>Consumir en el local</b>

@@ -40,7 +40,9 @@
   font-family: "MiFuentePersonalizada";
 }
 .naviTit5 {
-  color: #0d4862;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 .naviLanding {
   display: flex;
@@ -110,28 +112,12 @@
   margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.leta1 {
-  color: #18a59d;
-}
-.leta2 {
-  color: #edcc27;
-}
-.leta3 {
-  color: #c1373e;
-}
-.leta4 {
-  color: #295db1;
-}
+
 a {
   text-decoration: none;
 }
 
-.leta1,
-.leta2,
-.leta3,
-.leta4 {
-  font-weight: 800;
-}
+
 
 .rowsCardL {
   display: flex;
