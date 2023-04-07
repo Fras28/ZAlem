@@ -6,7 +6,7 @@
   min-height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .btnBack {
   outline: #c1373e double 1px;
@@ -69,6 +69,11 @@
   border-radius: 24px;
   padding: 1rem;
   margin-top: 2rem;
+}
+.textHere{
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 600px) {

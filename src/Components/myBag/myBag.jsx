@@ -63,7 +63,7 @@ export const Bag = (id) => {
           <div><b>Direccion:</b> <input className="inputStatus" placeholder="Donado 128" type="text"/></div> 
           <div><b>Dpto:</b> <input className="inputStatus" placeholder="PB - C" type="text"/></div> 
           </div> :
-   <p></p>}
+   <p className="textHere">Al final de esta pagina se a generado un codigo QR para que el mozo retire su pedido</p>}
       <div className="contBag animate__animated   animate__rollIn animate__faster">
         <CardsBag products={result} />
       </div>
