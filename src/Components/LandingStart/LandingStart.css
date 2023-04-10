@@ -104,6 +104,12 @@ font-size: 5rem;
 text-shadow: #0d4862 5px 5px 10px ;
 
 }
+.morton1{
+  font-size: 3rem;
+padding: 1rem;
+  background-color: rgba(245, 245, 245, 0.463);
+  border-radius: 50%;
+}
 
 @media (max-width: 600px) {
   .btnEnter{

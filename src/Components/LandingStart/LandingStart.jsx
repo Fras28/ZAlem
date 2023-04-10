@@ -25,8 +25,7 @@ export const Inicio = (url) => {
           
       <div className="marcaLanging ">
 
-
-   <img className="LogoStart" src={logo} alt="LOGUITO"/>
+<img className="morton1" src={logo} alt="logo"/>
       </div>
         </NavLink>
       <div className="btnEnter">
