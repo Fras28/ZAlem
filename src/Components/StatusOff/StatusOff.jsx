@@ -7,6 +7,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import "./StatusOff.css";
+import logo from "../assets/ZLogo.png"
 import { Link } from "react-router-dom";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -54,7 +55,7 @@ React.useEffect(()=>{
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle className="infoNavi">
-          Sushi Bahia{" "}
+          <img src={logo} alt="loguito nav" className="logAlert"/>
           <button className="exit" onClick={handleClose}>
             x
           </button>
@@ -67,7 +68,7 @@ React.useEffect(()=>{
           </DialogContentText>
         </DialogContent>
         <DialogActions>  <Link to={`si/Landing`}>
-        <button>Seguir de todas maneras</button> 
+        <button className="seguirDT">Seguir de todas maneras</button> 
         </Link>  </DialogActions>
       </Dialog>
       <input type="text" ></input>

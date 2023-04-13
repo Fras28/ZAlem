@@ -35,8 +35,8 @@ const switchStat = () =>{
   return (
     <div className="LandingBack">
 
-   { appStatus === true?  <div className="red">Status</div>:
-      <div className="green">Status</div>}
+   { appStatus === true?  <div className="stat red"><b>Server OFFLINE</b></div>:
+      <div className="stat green"><b>Server ON</b></div>}
 
    <div>
 

@@ -17,9 +17,7 @@
     box-shadow: 1px 2px 1px black
 }
 .textNavid{
-    font-family: 'Barlow Condensed', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Mountains of Christmas', cursive;
     font-size: 1rem;
     color: black;
     margin: auto;
@@ -43,4 +41,15 @@
     font-size: 1rem;
     margin-top: 5%;
     height: 100%;
+}
+.seguirDT{
+    background-color: rgb(207, 129, 4);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    height: 32px;
+    border-radius: 6px;
+}
+.logAlert{
+    
 }
