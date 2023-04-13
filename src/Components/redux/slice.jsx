@@ -7,8 +7,8 @@ const initialState = {
   allProduct: [],
   copyallProducts: [],
   favProd: [],
-  orderStatus:[{status:"forHere"}],
-  appStatus:[]
+  orderStatus: [{ status: "forHere" }],
+  appStatus: [],
 };
 
 export const dataSlice = createSlice({
@@ -24,26 +24,28 @@ export const dataSlice = createSlice({
       state.favProd = [...state.favProd, action.payload];
     },
     cancelBagProducts: (state, action) => {
-      const indexProd = state.favProd.map(object => object.name).indexOf(action.payload);
+      const indexProd = state.favProd
+        .map((object) => object.name)
+        .indexOf(action.payload);
       console.log(indexProd);
       if (indexProd !== "-1") {
-        const newBag = state.favProd.splice(indexProd,1)
-        state.favProd = state.favProd.filter(e => e !== newBag)
-      } 
-     },
+        const newBag = state.favProd.splice(indexProd, 1);
+        state.favProd = state.favProd.filter((e) => e !== newBag);
+      }
+    },
     SearchProducts: (state, action) => {
       state.copyallProducts = state.copyallProducts
         .filter((e) => e.name.includes(action.payload) === true)
         .slice(0, 10);
     },
-    OrderStat:(state, action) => {
-      state.orderStatus = [action.payload]
-      console.log(state.orderStatus)
+    OrderStat: (state, action) => {
+      state.orderStatus = [action.payload];
+      console.log(state.orderStatus);
     },
-    AppStat:(state, action) =>{
-      state.appStatus = action.payload
-      console.log("aca modificamos el valor del status", state.appStatus)
-    }
+    AppStat: (state, action) => {
+      state.appStatus = action.payload;
+      console.log("aca modificamos el valor del status", state.appStatus);
+    },
   },
 });
 
@@ -72,66 +74,70 @@ export const asyncSearchBar = (string) => {
     return dispatch(SearchProducts(string));
   };
 };
-export const asyncOrder = (pedido)=>{
-console.log(pedido, "este es el pedido slice")
-  return async function ( dispatch ){
-    try{
-      await axios.post(`https://ecommerce-demo.onrender.com/addP`,pedido);
-      console.log("posteado correctamente, sliceee")
-        return dispatch()
-    }catch(error){
-      console.log(error, "from Order")
+export const asyncOrder = (pedido) => {
+  console.log(pedido, "este es el pedido slice");
+  return async function (dispatch) {
+    try {
+      await axios.post(`https://ecommerce-demo.onrender.com/addP`, pedido);
+      console.log("posteado correctamente, sliceee");
+      return dispatch();
+    } catch (error) {
+      console.log(error, "from Order");
     }
-  }
-}
+  };
+};
 
-
-export const asyncOrderStat = (orderStat)=>{
+export const asyncOrderStat = (orderStat) => {
   console.log(orderStat, "este es el estado del tipo de pedido");
-    return async function ( dispatch ){
-      try{
-          return dispatch(OrderStat({status:orderStat}))
-      }catch(error){
-        console.log(error, "from Order")
-      }
+  return async function (dispatch) {
+    try {
+      return dispatch(OrderStat({ status: orderStat }));
+    } catch (error) {
+      console.log(error, "from Order");
     }
-  }
+  };
+};
 
-  
-  export const asyncGetStatus = (appStat)=>{
+export const asyncGetStatus = () => {
+  return async (dispatch) => {
+    axios
+      .get("https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66")
+      .then((response) => {
+        const status = response.data;
+        dispatch(AppStat(status.on));
+      })
+      .catch((error) => console.log(error, "from Order"));
+  };
+};
 
-    return async function ( dispatch ){
-      try{
-       let status =  await axios.get(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`);
-       console.log(status.data.on, "este es el estado de la APP")
-          return dispatch(AppStat(status.data.on))
-      }catch(error){
-        console.log(error, "from Order")
-      }
-      }
+
+export const asyncAppSwitch = () => {
+  return async (dispatch) => {
+    try {
+      const response = await axios.get(
+        "https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66"
+      );
+      const status = response.data;
+      const newStatus = { on: !status.on };
+      await axios.patch(
+        "https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66",
+        newStatus
+      );
+      dispatch(AppStat(newStatus.on));
+    } catch (error) {
+      console.log(error, "STATUS ERROR");
     }
-
-  export const asyncAppSwitch = ()=>{
- 
-    return async function ( dispatch ){
-      try{
-        let status =  await axios.get(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`);
-        console.log(status.data.on, "esto es initialstate")
-        status.data.on === true ?
-        await axios.patch(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`,{ "on": false }):
-        await axios.patch(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`,{ "on": true })
-        let status1 =  await axios.get(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`);
-        console.log(status1.data.on, "este es el estado de la APP")
-           return dispatch(AppStat(status1.data.on))
-      }catch(error){
-        console.log(error, "STATUS ERROR")
-      }
-      }
-    }
-  
+  };
+};
 //----------------------------------------------------------------------------------------------------------------
 
-export const { allProducts, favProducts, cancelBagProducts, SearchProducts, OrderStat,AppStat} =
-  dataSlice.actions;
+export const {
+  allProducts,
+  favProducts,
+  cancelBagProducts,
+  SearchProducts,
+  OrderStat,
+  AppStat,
+} = dataSlice.actions;
 
 export default dataSlice.reducer;

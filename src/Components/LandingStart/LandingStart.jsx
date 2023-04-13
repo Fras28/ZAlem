@@ -34,7 +34,6 @@ let estado = {appStatus}
    {appStatus === true || undefined ?
    <div>
          <StatusOff/>
-     {/* <Admin/> */}
     </div>
    :
    <div>

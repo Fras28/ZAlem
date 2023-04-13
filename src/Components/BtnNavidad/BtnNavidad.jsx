@@ -61,6 +61,7 @@ const handleClickOpen = () => {
           <DialogContentText id="alert-dialog-slide-description">
             Desde 1993 en la ciudad de Bahia Blanca . Haciendo tu pizza favorita
             🍕❤
+      
           </DialogContentText>
         </DialogContent>
         <DialogActions> </DialogActions>

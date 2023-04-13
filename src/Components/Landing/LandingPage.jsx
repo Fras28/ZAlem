@@ -20,11 +20,6 @@ export default function LandingPage(url) {
   })
   let { appStatus } = useSelector((state) => state.alldata);
 
-  // if (url.location.pathname === "/") {
-  //   url.location.pathname = "/sinMesa";
-  //   console.log(url.location.pathname);
-  // }
-
   return (
     <div className="animate__animated  animate__zoomIn ">
       <div className="naviLanding titCasa ">
@@ -56,12 +51,6 @@ export default function LandingPage(url) {
           </svg>
         </div>
       </div>
-      {appStatus === true ?
-   <div>
-         <StatusOff/>
-     <Admin/>
-    </div>
-   :
       <div className="conteinerLB2  ">
         <div className="rowsCardL">
           <NavLink className="navLink" to={`${url.location.pathname}/Bebidas`}>
@@ -96,7 +85,7 @@ export default function LandingPage(url) {
           </div>
           </NavLink>
         </div>
-      </div>}
+      </div>
       <div className="navi2">
         <svg
           width="59"

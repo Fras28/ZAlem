@@ -7,12 +7,13 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import "./StatusOff.css";
+import { Link } from "react-router-dom";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function StatusOff(text) {
+export default function StatusOff(url) {
   const [open, setOpen] = React.useState(false);
 React.useEffect(()=>{
   handleClickOpen()
@@ -65,7 +66,9 @@ React.useEffect(()=>{
           RECORDA que nuestros horarios son : de 18hs a 23hs de Martes a Domingos
           </DialogContentText>
         </DialogContent>
-        <DialogActions> </DialogActions>
+        <DialogActions>  <Link to={`si/Landing`}>
+        <button>Seguir de todas maneras</button> 
+        </Link>  </DialogActions>
       </Dialog>
       <input type="text" ></input>
     </div>
