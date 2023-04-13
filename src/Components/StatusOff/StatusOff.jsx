@@ -63,7 +63,7 @@ React.useEffect(()=>{
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
           En este momento no estamos tomando pedidos a travez de la APP
-          probablemente ya allamos llegado a nustro limite diario .
+          probablemente ya hayamos llegado a nustro limite diario .
           RECORDA que nuestros horarios son : de 18hs a 23hs de Martes a Domingos
           </DialogContentText>
         </DialogContent>
