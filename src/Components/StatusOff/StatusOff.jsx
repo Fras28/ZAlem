@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -7,18 +6,20 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
-import "./BtnNavidad.css";
+import "./StatusOff.css";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function AlertDialogSlide(text) {
+export default function StatusOff(text) {
   const [open, setOpen] = React.useState(false);
-
-const handleClickOpen = () => {
-  setOpen(true);
-};
+React.useEffect(()=>{
+  handleClickOpen()
+})
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
   const handleClose = () => {
     setOpen(false);
@@ -52,19 +53,21 @@ const handleClickOpen = () => {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle className="infoNavi">
-          ZETA ALEM{" "}
+          Sushi Bahia{" "}
           <button className="exit" onClick={handleClose}>
             x
           </button>
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            Desde 1993 en la ciudad de Bahia Blanca . Haciendo tu pizza favorita
-            🍕❤
+          En este momento no estamos tomando pedidos a travez de la APP
+          probablemente ya allamos llegado a nustro limite diario .
+          RECORDA que nuestros horarios son : de 18hs a 23hs de Martes a Domingos
           </DialogContentText>
         </DialogContent>
         <DialogActions> </DialogActions>
       </Dialog>
+      <input type="text" ></input>
     </div>
   );
 }

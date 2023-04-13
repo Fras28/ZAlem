@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./LandingPage.css";
 import comidas from "../assets/food.webp";
@@ -6,10 +6,19 @@ import { VerPedido } from "../BtnBag/BtnBag";
 import wines from "../assets/wines.webp"
 import events from "../assets/events.webp"
 import logo from "../assets/ZLogo.png"
+import StatusOff from "../StatusOff/StatusOff";
+import { Admin } from "../../Admin/Admin";
+import { useDispatch, useSelector } from "react-redux";
+import { asyncGetStatus } from "../redux/slice";
 
 
 export default function LandingPage(url) {
-  const id = url.location.pathname.slice(1,3)
+  const dispatch = useDispatch()
+  const id = url.location.pathname.slice(1,3);
+  useEffect(()=>{
+    dispatch(asyncGetStatus())
+  })
+  let { appStatus } = useSelector((state) => state.alldata);
 
   // if (url.location.pathname === "/") {
   //   url.location.pathname = "/sinMesa";
@@ -47,7 +56,12 @@ export default function LandingPage(url) {
           </svg>
         </div>
       </div>
-
+      {appStatus === true ?
+   <div>
+         <StatusOff/>
+     <Admin/>
+    </div>
+   :
       <div className="conteinerLB2  ">
         <div className="rowsCardL">
           <NavLink className="navLink" to={`${url.location.pathname}/Bebidas`}>
@@ -82,7 +96,7 @@ export default function LandingPage(url) {
           </div>
           </NavLink>
         </div>
-      </div>
+      </div>}
       <div className="navi2">
         <svg
           width="59"

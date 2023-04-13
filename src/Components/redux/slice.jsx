@@ -7,7 +7,8 @@ const initialState = {
   allProduct: [],
   copyallProducts: [],
   favProd: [],
-  orderStatus:[{status:"forHere"}]
+  orderStatus:[{status:"forHere"}],
+  appStatus:[]
 };
 
 export const dataSlice = createSlice({
@@ -38,6 +39,10 @@ export const dataSlice = createSlice({
     OrderStat:(state, action) => {
       state.orderStatus = [action.payload]
       console.log(state.orderStatus)
+    },
+    AppStat:(state, action) =>{
+      state.appStatus = action.payload
+      console.log("aca modificamos el valor del status", state.appStatus)
     }
   },
 });
@@ -91,10 +96,42 @@ export const asyncOrderStat = (orderStat)=>{
       }
     }
   }
+
+  
+  export const asyncGetStatus = (appStat)=>{
+
+    return async function ( dispatch ){
+      try{
+       let status =  await axios.get(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`);
+       console.log(status.data.on, "este es el estado de la APP")
+          return dispatch(AppStat(status.data.on))
+      }catch(error){
+        console.log(error, "from Order")
+      }
+      }
+    }
+
+  export const asyncAppSwitch = ()=>{
+ 
+    return async function ( dispatch ){
+      try{
+        let status =  await axios.get(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`);
+        console.log(status.data.on, "esto es initialstate")
+        status.data.on === true ?
+        await axios.patch(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`,{ "on": false }):
+        await axios.patch(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`,{ "on": true })
+        let status1 =  await axios.get(`https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66`);
+        console.log(status1.data.on, "este es el estado de la APP")
+           return dispatch(AppStat(status1.data.on))
+      }catch(error){
+        console.log(error, "STATUS ERROR")
+      }
+      }
+    }
   
 //----------------------------------------------------------------------------------------------------------------
 
-export const { allProducts, favProducts, cancelBagProducts, SearchProducts, OrderStat } =
+export const { allProducts, favProducts, cancelBagProducts, SearchProducts, OrderStat,AppStat} =
   dataSlice.actions;
 
 export default dataSlice.reducer;

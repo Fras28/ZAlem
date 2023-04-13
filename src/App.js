@@ -11,11 +11,16 @@ import { Bebidas } from './Components/Bebidas/Bebidas.jsx';
 import { SpecialEvent } from './Components/SpecialEvent/SpecialEvent.jsx';
 import { TrackClub } from './Components/TrackClub/TrackClub.jsx';
 import { Inicio } from './Components/LandingStart/LandingStart.jsx';
+import { InicioAdmin } from './Components/LanginAdmin/PanelAdmin.jsx';
+import { useSelector } from 'react-redux';
 
 function App() {
+
   return (
     <div className="App">
+
 <Switch>
+        <Route exact path="/6435bff486a38eae17515a66" component={InicioAdmin}/>  
           <Route exact path="/:id?" component={Inicio}/>
           <Route exact path="/:id/Landing" component={Landing}/>
           <Route exact path="/:id/Landing/Wines" component={Wines}/>
