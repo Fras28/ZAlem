@@ -44,6 +44,7 @@ export const dataSlice = createSlice({
     },
     AppStat: (state, action) => {
       state.appStatus = action.payload;
+      console.log(action.payload, 'este es el estado de la pagina')
     },
   },
 });
@@ -87,7 +88,6 @@ export const asyncOrder = (pedido) => {
 };
 
 export const asyncOrderStat = (orderStat) => {
-  console.log(orderStat, "este es el estado del tipo de pedido");
   return async function (dispatch) {
     try {
       return dispatch(OrderStat({ status: orderStat }));
@@ -97,12 +97,15 @@ export const asyncOrderStat = (orderStat) => {
   };
 };
 
-export const asyncGetStatus = () => {
-  return async (dispatch) => {
-   const response =  axios.get("https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66")
-        dispatch(AppStat(response.data.on));
+export const asyncGetStatus = () =>  async (dispatch) => {
+   try {
+    const response = await axios.get('https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66');
+    console.log(response.data.on, "esto es el slice asyncGetStatus")
+    return dispatch(AppStat(response.data.on));
+  } catch (error) {
+    console.error(error);
+  }
   };
-};
 
 
 export const asyncAppSwitch = () => {
@@ -111,8 +114,7 @@ export const asyncAppSwitch = () => {
       const response = await axios.get(
         "https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66"
       );
-      const status = response.data;
-      const newStatus = { on: !status.on };
+      const newStatus = { on: !response.data.on };
       await axios.patch(
         "https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66",
         newStatus

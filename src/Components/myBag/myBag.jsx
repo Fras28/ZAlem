@@ -63,12 +63,12 @@ export const Bag = (id) => {
     <div className="backBag">
       <Nav id={id.match.params.id} />
       <div>
-        {appStatus !== true ? (
+        {appStatus === true ? (
           <OrderStatusSwitches />
         ) : (
           <p>LAS OPCIONES ESTAN SUSPENDIDAS MOMENTANEAMENTE</p>
         )}
-        {appStatus !== true ? (
+        {appStatus === true ? (
           <div>
             {" "}
             {orderStatus[0].status === "takeAway" ? (
@@ -111,7 +111,7 @@ export const Bag = (id) => {
         )}
         {orderStatus[0].status === "forHere" ? (
           <div>
-            {appStatus !== true ? (
+            {appStatus === true ? (
               <QRCode
                 className="QrBag"
                 value={favProd.map((e) => e.name + "$" + e.price + "   ")}

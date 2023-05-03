@@ -11,18 +11,17 @@ import StatusOff from "../StatusOff/StatusOff";
 
 export const Inicio = (url) => {
 const dispatch = useDispatch()
-let { appStatus } = useSelector((state) => state.alldata);
-console.log(appStatus, "status de la app landing")
-  const toTop = ()=>{
-    window.scrollTo(0,0);
-  }
-   toTop();
+const toTop = ()=>{
+  window.scrollTo(0,0);
+}
+toTop();
 
 useEffect(()=>{
-  dispatch(asyncGetStatus())
+  dispatch(asyncGetStatus());
 }
-
 )
+const { appStatus } = useSelector((state) => state.alldata);
+console.log(appStatus, "status de la app landing");
 let estado = {appStatus}
     console.log(url)
     if (url.location.pathname === "/") {
@@ -31,12 +30,12 @@ let estado = {appStatus}
       }
   return (
     <div className="LandingBack">
-   {appStatus === true || undefined ?
+   {appStatus === false ?(
    <div>
          <StatusOff/>
-    </div>
+    </div>)
    :
-   <div>
+(   <div>
 
      <NavLink to={`${url.location.pathname}`}>
          
@@ -51,7 +50,7 @@ let estado = {appStatus}
        <button className="Enter animate__animated  animate__zoomIn animate__fast" disabled={estado === false} >Entrar</button>
        </Link>
      </div>
-   </div>
+   </div>)
 }
     </div>
   );
