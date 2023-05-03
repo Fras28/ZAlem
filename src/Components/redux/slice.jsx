@@ -44,7 +44,6 @@ export const dataSlice = createSlice({
     },
     AppStat: (state, action) => {
       state.appStatus = action.payload;
-      console.log("aca modificamos el valor del status", state.appStatus);
     },
   },
 });
@@ -100,13 +99,8 @@ export const asyncOrderStat = (orderStat) => {
 
 export const asyncGetStatus = () => {
   return async (dispatch) => {
-    axios
-      .get("https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66")
-      .then((response) => {
-        const status = response.data;
-        dispatch(AppStat(status.on));
-      })
-      .catch((error) => console.log(error, "from Order"));
+   const response =  axios.get("https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66")
+        dispatch(AppStat(response.data.on));
   };
 };
 
