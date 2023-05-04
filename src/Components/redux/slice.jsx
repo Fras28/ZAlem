@@ -3,9 +3,6 @@ import axios from "axios";
 
 import { jsonCafe } from "../json";
 
-
-
-
 const initialState = {
   allProduct: [],
   copyallProducts: [],
@@ -81,7 +78,7 @@ export const asyncOrder = (pedido) => {
   console.log(pedido, "este es el pedido slice");
   return async function (dispatch) {
     try {
-      await axios.post(UrlEcomerce, pedido);
+      await axios.post(`https://ecommerce-demo.onrender.com/addP`, pedido);
       console.log("posteado correctamente, sliceee");
       return dispatch();
     } catch (error) {
@@ -102,7 +99,7 @@ export const asyncOrderStat = (orderStat) => {
 
 export const asyncGetStatus = () =>  async (dispatch) => {
    try {
-    const response = await axios.get(apiStat);
+    const response = await axios.get('https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66');
     console.log(response.data.on, "esto es el slice asyncGetStatus")
     return dispatch(AppStat(response.data.on));
   } catch (error) {
@@ -114,10 +111,12 @@ export const asyncGetStatus = () =>  async (dispatch) => {
 export const asyncAppSwitch = () => {
   return async (dispatch) => {
     try {
-      const response = await axios.get( apiStat );
+      const response = await axios.get(
+        "https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66"
+      );
       const newStatus = { on: !response.data.on };
       await axios.patch(
-        apiStat,
+        "https://ill-lime-gopher-sari.cyclic.app/webapp/6435bff486a38eae17515a66",
         newStatus
       );
       dispatch(AppStat(newStatus.on));
