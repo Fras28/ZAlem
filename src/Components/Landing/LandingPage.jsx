@@ -1,23 +1,21 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./LandingPage.css";
-import comidas from "../assets/food.webp";
 import { VerPedido } from "../BtnBag/BtnBag";
-import wines from "../assets/wines.webp"
-import events from "../assets/events.webp"
-import logo from "../assets/ZLogo.png"
-import StatusOff from "../StatusOff/StatusOff";
-import { Admin } from "../../Admin/Admin";
+import logo from "../assets/ZLogo.png";
 import { useDispatch, useSelector } from "react-redux";
 import { asyncGetStatus } from "../redux/slice";
-
+import img1 from "../assets/para1.jpg";
+import img2 from "../assets/para2.jpg";
+import img3 from "../assets/para3.jpg";
+import img4 from "../assets/para4.jpg";
 
 export default function LandingPage(url) {
-  const dispatch = useDispatch()
-  const id = url.location.pathname.slice(1,3);
-  useEffect(()=>{
-    dispatch(asyncGetStatus())
-  })
+  const dispatch = useDispatch();
+  const id = url.location.pathname.slice(1, 3);
+  useEffect(() => {
+    dispatch(asyncGetStatus());
+  });
   let { appStatus } = useSelector((state) => state.alldata);
 
   return (
@@ -25,9 +23,8 @@ export default function LandingPage(url) {
       <div className="naviLanding titCasa ">
         <div className="logoL">
           <NavLink to={`/${id}`}>
-  <img src={logo} alt="" className="LogoNavi"/>
+            <img src={logo} alt="" className="LogoNavi" />
           </NavLink>
-        
         </div>
         <div className="navi2">
           <svg
@@ -54,14 +51,20 @@ export default function LandingPage(url) {
       <div className="conteinerLB2  ">
         <div className="rowsCardL">
           <NavLink className="navLink" to={`${url.location.pathname}/Bebidas`}>
-          <div className="titInicio">
-            <img src="https://thumbnails.production.thenounproject.com/BF2Y0vpUKv5m9MIG37HQtzooDqs=/fit-in/1000x1000/photos.production.thenounproject.com/photos/sushi_on_plates-scopio-1f9c2352-172c-4230-8387-b9c571640485.JPG"  alt=""/>
-            <p>PARA 1</p>
-          </div>
+            <div className="titInicio">
+              <img
+                src={img1}
+                alt=""
+              />
+              <p>PARA 1</p>
+            </div>
           </NavLink>
           <NavLink className="navLink" to={`${url.location.pathname}/Comidas`}>
             <div className="titInicio">
-              <img src="https://thumbnails.production.thenounproject.com/3mF3sHYfTiWf6JIBe58vonElr9g=/fit-in/1000x1000/photos.production.thenounproject.com/photos/japanese_sushi_on_colorful_ceramic_plate-scopio-185d6693-1296-4b7f-af5d-451a93cb5612.jpg" alt=""/>
+              <img
+                src={img2}
+                alt=""
+              />
               <p>PARA 2</p>
             </div>
           </NavLink>
@@ -74,15 +77,21 @@ export default function LandingPage(url) {
             }
           >
             <div className="titInicio">
-              <img src="https://thumbnails.production.thenounproject.com/FbeNV9RzZOize7gunkR5fKCOm5M=/fit-in/1000x1000/photos.production.thenounproject.com/photos/fresh_sashimi_on_a_plate-scopio-3b656329-023f-4d24-9823-0ffdd0ae9d6b.jpg" alt="fotito" />
+              <img
+                src={img3}
+                alt="fotito"
+              />
               <p>PARA 3</p>
             </div>
           </NavLink>
           <NavLink to={`${url.location.pathname}/SpecialEvent`}>
-          <div className="titInicio">
-            <img src="https://thumbnails.production.thenounproject.com/by-S7yI9qns-mkNA7IR7aoTrnc0=/fit-in/1000x1000/photos.production.thenounproject.com/photos/570231FB-3237-4852-A128-7BA2C260552A.jpg" alt="" />
-            <p>PARA 4</p>
-          </div>
+            <div className="titInicio">
+              <img
+                src={img4}
+                alt=""
+              />
+              <p>PARA 4</p>
+            </div>
           </NavLink>
         </div>
       </div>
@@ -96,7 +105,7 @@ export default function LandingPage(url) {
         >
           <path d="M59 0.999995L0 1" stroke="black" />
         </svg>
-        <p className="naviTit5">Miércoles a Domingo  19 al cierre </p>
+        <p className="naviTit5">Miércoles a Domingo 19 al cierre </p>
         <svg
           width="59"
           height="2"
@@ -107,7 +116,7 @@ export default function LandingPage(url) {
           <path d="M59 0.999995L0 1" stroke="black" />
         </svg>
       </div>
-      <VerPedido id={url.location.pathname.slice(1,3)}/>
+      <VerPedido id={url.location.pathname.slice(1, 3)} />
     </div>
   );
 }

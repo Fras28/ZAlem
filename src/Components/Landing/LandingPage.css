@@ -148,9 +148,5 @@ a {
   text-shadow: #000000 5px 5px 10px;
 }
 @media (max-width: 600px) {
-  .titInicio:hover {
-    color: #d47618;
-    border-radius: 20%;
-    border: solid white;
-  }
+
 }
