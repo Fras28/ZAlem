@@ -23,7 +23,11 @@ export default function LandingPage(url) {
       <div className="naviLanding titCasa ">
         <div className="logoL">
           <NavLink to={`/${id}`}>
-            <img src={logo} alt="" className="LogoNavi" />
+            <img
+              src="http://www.sushiandroll.com.ar/images/sushi-and-roll-delivery-bahia-blanca-home.png"
+              alt="loguito nav"
+              className="LogoNavi"
+            />
           </NavLink>
         </div>
         <div className="navi2">
@@ -34,7 +38,7 @@ export default function LandingPage(url) {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M59 0.999995L0 1" stroke="white" />
+            <path d="M59 0.999995L0 1" stroke="black" />
           </svg>
           <p className="naviTit2"> Nuesto Menú </p>
           <svg
@@ -44,28 +48,28 @@ export default function LandingPage(url) {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M59 0.999995L0 1" stroke="white" />
+            <path d="M59 0.999995L0 1" stroke="black" />
           </svg>
         </div>
       </div>
       <div className="conteinerLB2  ">
         <div className="rowsCardL">
-          <NavLink className="navLink" to={`${url.location.pathname}/Bebidas`}>
+          <NavLink
+            className="navLink"
+            to={`${url.location.pathname}/Combinados`}
+          >
             <div className="titInicio">
-              <img
-                src={img1}
-                alt=""
-              />
-              <p>PARA 1</p>
+              <img src={img1} alt="" />
+              <p>Combinados</p>
             </div>
           </NavLink>
-          <NavLink className="navLink" to={`${url.location.pathname}/Comidas`}>
+          <NavLink
+            className="navLink"
+            to={`${url.location.pathname}/SushiRolls`}
+          >
             <div className="titInicio">
-              <img
-                src={img2}
-                alt=""
-              />
-              <p>PARA 2</p>
+              <img src={img2} alt="" />
+              <p>Sushi Rolls</p>
             </div>
           </NavLink>
           <NavLink
@@ -73,24 +77,18 @@ export default function LandingPage(url) {
             to={
               url.location.pathname === "/"
                 ? `/Cafeteria`
-                : `${url.location.pathname}/Wines`
+                : `${url.location.pathname}/Otraspiezas`
             }
           >
             <div className="titInicio">
-              <img
-                src={img3}
-                alt="fotito"
-              />
-              <p>PARA 3</p>
+              <img src={img3} alt="fotito" />
+              <p>Otras piezas</p>
             </div>
           </NavLink>
-          <NavLink to={`${url.location.pathname}/SpecialEvent`}>
+          <NavLink to={`${url.location.pathname}/CocinayVeggie`}>
             <div className="titInicio">
-              <img
-                src={img4}
-                alt=""
-              />
-              <p>PARA 4</p>
+              <img src={img4} alt="" />
+              <p>Cocina y Veggie</p>
             </div>
           </NavLink>
         </div>
@@ -105,7 +103,7 @@ export default function LandingPage(url) {
         >
           <path d="M59 0.999995L0 1" stroke="black" />
         </svg>
-        <p className="naviTit5">Miércoles a Domingo 19 al cierre </p>
+        <p className="naviTit5">Miércoles a Lunes de 18:00 a 23:30 hs. </p>
         <svg
           width="59"
           height="2"

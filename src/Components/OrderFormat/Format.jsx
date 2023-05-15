@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { asyncOrderStat} from "../redux/slice";
+import { asyncOrderStat } from "../redux/slice";
 import "./Format.css";
 
 const OrderStatusSwitches = () => {
@@ -44,45 +44,31 @@ const OrderStatusSwitches = () => {
   };
   return (
     <div className="backSwitch">
-        <div className="Chek">
-      <label className="checkBox"> 
-        <input
-        className="box"
-          id="ch1"
-          type="checkbox"
-          checked={orderStatus[0].status === "delivery"}
-          onClick={handleDeliveryChange}
-        />
-        <div class="transition"></div>
-      </label>
-      <b>Delivery</b>
-        </div>
-        <div className="Chek">
-      <label className="checkBox">
-        <input
-          className="box"
-           id="ch1"
-           type="checkbox"
-           checked={orderStatus[0].status === "takeAway"}
-           onClick={handleTakeAwayChange}
-           />
-      </label>
-           <b> Take Away</b> 
-
-        </div>
-        <div className="Chek">
-      <label className="checkBox">
-        <input
-          className="box"
-           id="ch1"
-          type="checkbox"
-          checked={orderStatus[0].status === "forHere"}
-          onClick={handleForHereChange}
+      <div className="Chek">
+        <label className="checkBox">
+          <input
+            className="box"
+            id="ch1"
+            type="checkbox"
+            checked={orderStatus[0].status === "delivery"}
+            onClick={handleDeliveryChange}
           />
-      </label>
-          <b>Consumir en el local</b>
-
-        </div>
+          <div class="transition"></div>
+        </label>
+        <b>Delivery</b>
+      </div>
+      <div className="Chek">
+        <label className="checkBox">
+          <input
+            className="box"
+            id="ch1"
+            type="checkbox"
+            checked={orderStatus[0].status === "takeAway"}
+            onClick={handleTakeAwayChange}
+          />
+        </label>
+        <b> Take Away</b>
+      </div>
     </div>
   );
 };

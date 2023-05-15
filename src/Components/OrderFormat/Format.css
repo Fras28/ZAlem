@@ -11,6 +11,7 @@
   display: flex;
   padding-top: .5rem;
   padding-bottom: .5rem;
+  justify-content: space-evenly
 }
 @keyframes gradient-bg {
 	0% {
@@ -34,14 +35,13 @@
   width: 25px;
   height: 25px;
   cursor: pointer;
-  border: 2px solid salmon;
+  border: 2px solid #0060FF;
   appearance: none;
   border-radius: 50%;
   background-color: whitesmoke;
 }
 .box:checked{
   background-color:black;
-
 }
 
 label::before{
@@ -55,6 +55,15 @@ label::before{
 }
 .inputStatus{
   border-radius: 24px;
+  height: 24px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 24px;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
+  text-align: center;
+  border: 2px solid #0060FF;
+  box-shadow: 0px 0px 8px #0060FF inset;
 }
 .inputStatus::placeholder{
 padding-left: 5%;

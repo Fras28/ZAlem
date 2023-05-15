@@ -5,16 +5,15 @@
 }
 .infoNavi{
     display: flex;
-    background-color: white;
+    background-color: black;
     font-weight: 500;
     border-bottom:whitesmoke 2px solid;
     justify-content: space-between;
-  
 }
 .btnMasInfo{
     border: none;
     border-radius: 50%;
-    box-shadow: 1px 2px 1px black
+    box-shadow: 1px 2px 1px #0060FF
 }
 .textNavid{
     font-family: 'Barlow Condensed', sans-serif;

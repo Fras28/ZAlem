@@ -13,8 +13,9 @@ h1 {
   width: 100%;
   justify-content: space-evenly;
   background-image: url("../assets/np_Flag\ of\ Japan\ made\ of\ rice\ and\ tuna\ meat\ texture_4ARV6b_free.jpg");
+  filter: grayscale(30%);
   animation: gradient-bg 50s ease infinite;
-  box-shadow: 0px 0px 8px black;
+  box-shadow: 0px 0px 8px #0060FF;
 }
 @keyframes gradient-bg {
   0% {
@@ -38,13 +39,12 @@ h1 {
 }
 .morton {
   width: 100px;
-  height: 100px;
   display: flex;
   padding: 1rem;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: rgba(245, 245, 245, 0.322);
+  background-color: #0062ff62;
 }
 .backLink {
   display: none;
@@ -55,7 +55,7 @@ h1 {
 }
 @media (max-width: 600px) {
   .back:hover {
-    box-shadow: 1px 2px 1px black;
+    box-shadow: 1px 2px 1px #0060FF;
   }
   .nav {
     justify-content: flex-start;
@@ -64,7 +64,7 @@ h1 {
     display: block;
   }
   .morton {
-    margin-left: 20%;
+    margin-left: 22%;
   }
   .bakBagBtn {
     display: block;

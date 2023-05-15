@@ -7,7 +7,7 @@ import { asyncallProducts } from "../redux/slice.jsx";
 import { VerPedido } from "../BtnBag/BtnBag.jsx";
 import wines from "../assets/para2.jpg";
 
-export const Wines = (id) => {
+export const Otraspiezas = (id) => {
   const mesa = id.match.url.slice(1, 3);
   console.log(id.match.url.slice(1, 3), "buscando ideeee");
 
@@ -19,28 +19,19 @@ export const Wines = (id) => {
     if (allProduct.length === 0) dispatch(asyncallProducts());
   }, [allProduct, dispatch]);
 
-  const VinoT = allProduct?.filter((e) => e.section === "VINO TIRADO");
-  const Malbec = allProduct?.filter((e) => e.section === "MALBEC");
+  const VinoT = allProduct?.filter((e) => e.section === "NIGUIRIS");
+  const Malbec = allProduct?.filter((e) => e.section === "HOSO MAKIS");
   const CabernetS = allProduct?.filter(
-    (e) => e.section === "CABERNET SAUVIGNON"
+    (e) => e.section === "TEMAKIS"
   );
-  const CabernetF = allProduct?.filter((e) => e.section === "CABERNET FRANC");
-  const Organicos = allProduct?.filter((e) => e.section === "ORGÁNICOS");
-  const Tanat = allProduct?.filter((e) => e.section === "TANAT");
-  const BlendC = allProduct?.filter(
-    (e) => e.section === "BLEND/CO-FERMENTADOS/BI-VARIETALES"
-  );
-  const VinoB = allProduct?.filter((e) => e.section === "VINO BLANCO");
-  const VinoR = allProduct?.filter((e) => e.section === "VINO ROSADO");
+  const CabernetF = allProduct?.filter((e) => e.section === "GEISHAS");
+  const Organicos = allProduct?.filter((e) => e.section === "SASHIMI");
+
 
   return (
     <div className="containerL">
       <Nav id={mesa} />
       <div className="sectioner">
-        <a href="#9">Vino Rosado</a>
-        <a href="#8">Vino Blanco</a>
-        <a href="#7">Bend Co-Fermentados</a>
-        <a href="#6">Tanat</a>
         <a href="#5">Organicos</a>
         <a href="#4">Cabernet Franc</a>
         <a href="#3">Cabernet Souvignon</a>
@@ -50,7 +41,7 @@ export const Wines = (id) => {
       <div className="conteinerLC ">
         <div className="conteinerLB2 animate__animated  animate__zoomIn animate__faster">
           <img src={wines} alt="promo" id="1" />
-          <Cards products={VinoT} espesificaciones="(COMING SOON...)" />
+          <Cards products={VinoT}  />
           <img
             src="https://http2.mlstatic.com/D_NQ_NP_625670-MLA44010264661_112020-O.webp"
             alt="promo"
@@ -75,30 +66,6 @@ export const Wines = (id) => {
             id="5"
           />
           <Cards products={Organicos} />
-          <img
-            src="https://innovagroup.com.ar/wp-content/uploads/2021/06/chanarmuyo_gran_vino_tannat_2018.jpg"
-            alt="promo"
-            id="6"
-          />
-          <Cards products={Tanat} />
-          <img
-            src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/671/382/products/banner-malabarista51-74c51bf9d05c56bb7816729750434182-1024-1024.webp"
-            alt="promo"
-            id="7"
-          />
-          <Cards products={BlendC} />
-          <img
-            src="https://reyvinoblanco.com/wp-content/uploads/2020/06/vino-dulce1.png"
-            alt="promo"
-            id="8"
-          />
-          <Cards products={VinoB} />
-          <img
-            src="https://editorialtelevisa.brightspotcdn.com/dims4/default/3f59d43/2147483647/strip/true/crop/996x560+2+0/resize/1440x810!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2020%2F08%2Fvino-rosa.jpg"
-            alt="promo"
-            id="9"
-          />
-          <Cards products={VinoR} />
         </div>
       </div>
       <VerPedido id={mesa} />

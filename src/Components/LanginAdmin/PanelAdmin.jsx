@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-import AlertDialogSlide from "../BtnNavidad/BtnNavidad";
+import AlertDialogSlide from "../BtnNavidad/ModalDialog";
 import "./PanelAdmin.css";
 import logo from "../assets/ZLogo.png"
 import { useDispatch, useSelector } from "react-redux";

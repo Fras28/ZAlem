@@ -13,7 +13,7 @@ export const Nav = (id) => {
   return (
     <div className="contNav">
       <div className="nav">
-        <Route path={`/:id/Landing/Wines`}>
+        <Route path={`/:id/Landing/Combinados`}>
           <Link className="backLink" to={`/${id.id}/Landing`}>
             <p className="back">
             <svg
@@ -34,7 +34,7 @@ export const Nav = (id) => {
             </p>
           </Link>
         </Route>
-        <Route path={`/:id/Landing/TrackClub`}>
+        <Route path={`/:id/Landing/Otraspiezas`}>
           <Link className="backLink" to={`/${id.id}/Landing`}>
             <p className="back">
             <svg
@@ -55,7 +55,7 @@ export const Nav = (id) => {
             </p>
           </Link>
         </Route>
-        <Route path={`/:id/Landing/Bebidas`}>
+        <Route path={`/:id/Landing/SushiRolls`}>
           <Link className="backLink" to={`/${id.id}/Landing`}>
             <p className="back">
             <svg
@@ -76,7 +76,7 @@ export const Nav = (id) => {
             </p>
           </Link>
         </Route>
-        <Route path={`/:id/Landing/SpecialEvent`}>
+        <Route path={`/:id/Landing/CocinayVeggie`}>
           <Link className="backLink" to={`/${id.id}/Landing`}>
             <p className="back">
               <svg
@@ -141,8 +141,7 @@ export const Nav = (id) => {
         </Route>
         <div className="morton foolishIn">
           <NavLink to={`/${id.id}`}>
-<img src={logo} alt="loguito nav" className="LogoNavi"/>
-
+<img   src="http://www.sushiandroll.com.ar/images/sushi-and-roll-delivery-bahia-blanca-home.png" alt="loguito nav" className="LogoNavi"/>
           </NavLink>
         </div>
       </div>

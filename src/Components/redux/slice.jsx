@@ -8,7 +8,7 @@ const initialState = {
   allProduct: [],
   copyallProducts: [],
   favProd: [],
-  orderStatus: [{ status: "forHere" }],
+  orderStatus: [{ status: "takeAway" }],
   appStatus: [],
 };
 

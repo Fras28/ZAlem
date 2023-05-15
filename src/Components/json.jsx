@@ -2,85 +2,484 @@
 export let jsonCafe = [
   // ---------------Drinks
   {
-    name: "GOLDEN ALE",
-    detail:
-      " 4.86% - IBU 14 |      Cerveza de alta tomabilidad con orientación hacia la malta. Balanceada y limpia. De color amarillo brillante con buena retención de espuma. Suave dulzor de malta y aromas a cereal, con presencia de lúpulo, aunque el amargar es bajo. El final es seco a ligeramente dulce-maltoso",
+    name: "Only for one - 10 piezas",
+    detail: "4 tail roll, 4 california, 2 niguitis palta y tomateseco",
     price: "600",
-    section: "BIRRITAS",
+    section: "PARA 1",
   },
   {
-    name: "HONEY",
-    detail:
-      "5.64% - IBU 22 |      Cerveza rubia de un color dorado profundo. Maltas caramelo y clara presencia de miel en sabor y aroma. El cuerpo es de ligero a medio, buena tomabilidad. Amargor bajo y balance hacia la malta y la miel.",
+    name: "Love Salmón - 11 piezas",
+    detail: "8 Philadelphia y 3 Niguiris de salmón.",
     price: "600",
-    section: "BIRRITAS",
+    section: "PARA 1",
   },
   {
-    name: "REDIPAN",
+    name: "Full Hoso Maki - 18 piezas",
     detail:
-      "5.7% - IBU 40 |       Cerveza de color ámbar profundo acompañado por una espuma densa de gran retención. Cuerpo medio alto. Sabor a maltas caramelo y fuerte carácter a alcohol! y amargor acompañados por un sutil ahumado. El agregado de bourbon Jack Daniel's en madurado da notas a madera y vainilla hacia el final.",
-    price: "700",
-    section: "BIRRITAS",
-  },
-  {
-    name: "SESSION IPA",
-    detail: 
-    "4.3% - IBU 31   Cerveza clara de color amarillento. Cuerpo lígero, con sabores a malta y caramelo, aunque el predominante principal es el lúpulo. Amargor medio alto. Notas a resina, frutas tropicales y cítricas.",
-    price: "700",
-    section: "BIRRITAS",
-  },
-  {
-    name: "ROJA ROTATIVA",
-    detail: "Consultar.",
-    price: "",
-    section: "BIRRITAS",
-  },
-  {
-    name: "IPA ROTATIVA",
-    detail: "Consultar.",
-    price: "",
-    section: "BIRRITAS",
-  }, 
-   {
-    name: "GOLDEN ALE",
-    detail: "4.86% - IBU 14 | Cerveza de alta tomabilidad con orientación hacia la malta. Balanceada y limpia. De color amarillo brillante con buena retención de espuma. Suave dulzor de malta y aromas a cereal, con presencia de lúpulo, aunque el amargar es bajo. El final es seco a ligeramente dulce-maltoso",
+      "6 salmón fresco, 3 de langostinos, 3 de atún, 3 de kani kama, 3 de palta.",
     price: "600",
-    section: "LATAS",
+    section: "PARA 1",
   },
   {
-    name: "GERMAN PILS",
-    detail: "5.2% - IBU 22 | Una cerveza alemana amarga, de cuerpo ligero, altamente atenuada, de color dorado y fermentacion baja, que exhibe una excelente retencion de espuma y un elegante aroma a lupulo floral. Chispeante, limpia y refrescante, una Pilsner que exhibe la mas fina calidad de malta y lupulo Alemán.",
-    price: "700",
-    section: "LATAS",
+    name: "Romero y Julieta - 20 piezas",
+    detail:
+      "4 Tuna cream, 4 California, 4 Tail roll, 4 Salad roll, 4 niguiris de Salmón",
+    price: "600",
+    section: "PARA 2",
   },
   {
-    name: "SESSION IPA",
-    detail: 
-    "4.3% - IBU 31  |    Cerveza clara de color amarillento. Cuerpo lígero, con sabores a malta y caramelo, aunque el predominante principal es el lúpulo. Amargor medio alto. Notas a resina, frutas tropicales y cítricas.",
-    price: "700",
-    section: "LATAS",
+    name: "Terminator 1 - 24 piezas",
+    detail:
+      "4 Beach roll, 4 Sésamo roll salmón, 4 Langostinos y palta, 4 California, 6 Hoso makis de salmón, 1 Niguiri de palta, 1 Niguiri de langostino",
+    price: "600",
+    section: "PARA 2",
   },
   {
-    name: "SCOTTISH EXPORT",
-    detail: "5.51% - IBU 18 |   Cerveza maltosa, con notas acarameladas y algo de butterscotch. De color cobrizo, con espuma blanquecina y cremosa. Sabor a migas de pan tostado, bizcochos y galletas. Amargor bajo y cuerpo medio, carbonatación moderada.",
-    price: "700",
-    section: "LATAS",
+    name: "Latin Lover - 26 piezas",
+    detail:
+      "8 Yogi roll, 8 Chicken Roll, 3 hoso makis de palta, 3 hoso makis de pepino, 2 niguiris de palta y pepino, 2 niguiris de palta y tomates secos",
+    price: "600",
+    section: "PARA 2",
   },
   {
-    name: "BELGIAN DUBBEL",
-    detail: "7.48%  - IBU 22.9 |  Cerveza rubia de un color dorado profundo. Maltas caramelo y clara presencia de miel en sabor y aroma. El cuerpo es de ligero a medio, buena tomabilidad. Amargor bajo y balance hacia la malta y la miel.",
-    price: "700",
-    section: "LATAS",
+    name: "Michigan - 34 piezas",
+    detail:
+      "4 New York, 4 Philadelphia, 4 Tuna Cream, 4 California, 8 Sésamo rolls de langostinos, 6 Hoso makis de salmón, 2 niguiris de salmón y 2 niguiris de palta y tomates secos.",
+    price: "600",
+    section: "PARA 3",
   },
   {
-    name: "POKER BOURBON",
-    detail: "8.53%  - IBU 51  |   Cerveza de color ámbar profundo acompañado por una espuma densa de gran retención. Cuerpo medio alto. Sabor a maltas caramelo y fuerte carácter a alcohol! y amargor acompañados por un sutil ahumado. El agregado de bourbon Jack Daniel's en madurado da notas a madera y vainilla hacia el final.",
+    name: "Terminator 2 - 34 piezas",
+    detail:
+      "8 Sashimis de salmón fresco, 8 Fernando VII, 4 New York, 4 Philadelphia, 4 Niguiris de Salmón fresco, 6 Hoso maki de Salmón fresco.",
     price: "700",
-    section: "LATAS",
+    section: "PARA 3",
+  },
+  {
+    name: "Sunset - 30 piezas",
+    detail:
+      "8 Philadelphia Ahumado, 8 Atún, verdeo y mayonesa envuelto en rúcula, 8 Sésamo de langostino y tomates secos, 6 Hoso makis de salmón.",
+    price: "700",
+    section: "PARA 3",
+  },
+  {
+    name: "Kobra Cai",
+    detail:
+      "8 Philadelphia, 8 Sésamo Tuna Cream, 8 Tail roll, 8 Makis de kanikama-palta y queso crema, 6 Hoso makis de salmón y 4 niguiris de salmón fresco..",
+    price: "700",
+    section: "PARA 4",
+  },
+  {
+    name: "Salad Roll - 8 piezas",
+    detail: "Zanahoria, palta, pepino y queso crema.",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "Philadelphia - 8 piezas ",
+    detail: "Salmón rosado, queso crema y palta.",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "California - 8 piezas ",
+    detail: "Kani kama, palta y pepino.",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "Salmon Roll - 8 piezas ",
+    detail: "Puro lomo de salmón rosado del pacífico.",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "Tail Roll - 8 piezas ",
+    detail: "Langostinos y queso crema",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "Tuna Cream - 8 piezas ",
+    detail: "Atún, palta y queso crema.",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "Dragon Tuna - 8 piezas ",
+    detail: "Atún, mayonesa y verdeo envuelto en rúcula.",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "New York - 8 piezas ",
+    detail: "Salmón rosado, palta y pepino",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "Patagonico - 8 piezas ",
+    detail: "Salmón ahumado y queso crema.",
+    price: "800",
+    section: "CLASIC ROLLS",
+  },
+  {
+    name: "Veggie Wok - 8 piezas",
+    detail:
+      "Repollo blanco, repollo morado y verdeo, salteados al wok con salsa de soja, un touch de jengibre y aceite de sésamo.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Hakuna Matata",
+    detail: "Crocante salmón rosado, queso crema y palta.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Bangladesh",
+    detail: "Salmón fresco y crocante salmón",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Hara Kiri - 8 piezas",
+    detail: "Crocante salmón rosado, langostinos y queso crema.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Green Smoked - 8 piezas",
+    detail: "Salmón ahumado, verdeo y queso crema.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Skin Salmon - 8 piezas",
+    detail: "Crocante salmón rosado y queso crema.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Californication - 8 piezas",
+    detail: "",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Sensei - 8 piezas",
+    detail:
+      "Salmón rosado, queso crema y tomates secos envuelto en rúcula fresca.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Beach Roll - 8 piezas",
+    detail: "Salmón rosado, tomates secos y queso crema.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Green Tomato - 8 piezas",
+    detail: "Palta, tomates secos y queso crema, envuelto en rúcula fresca.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Mangus - 8 piezas",
+    detail: "Salmón rosado y mango.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Yogui Roll - 8 piezas",
+    detail: "Palta, zanahoria, pepino y queso crema, envuelto en lechuga.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Honey Moon - 8 piezas",
+    detail: "Snacks de salmón rosado acompañado de salsa agridulce a la miel.",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Sesamo Roll - 8 piezas",
+    detail:
+      "Envuelto en sésamo tostado. Sésamo Roll de Salmón, Sésamo Roll de Langostinos, Sésamo Roll de Kani Kama, Sésamo Roll de Vegetale",
+    price: "600",
+    section: "GOLDEN ROLLS",
+  },
+  {
+    name: "Machu Pichu - 8 piezas",
+    detail: "Puro lomo de salmón rosado acompañado de un volcán de guacamole.",
+    price: "600",
+    section: "PLATINIUM ROLLS",
+  },
+  {
+    name: "Miyagui - 8 piezas",
+    detail:
+      "Puro lomo de salmón rosado acompañado de un volcán de salmón rosado, ciboulette, mayonesa y queso crema.",
+    price: "600",
+    section: "PLATINIUM ROLLS",
+  },
+  {
+    name: "Fernando VII - 8 piezas",
+    detail: "Salmón rosado por fuera relleno de más salmón rosado.",
+    price: "600",
+    section: "PLATINIUM ROLLS",
+  },
+  {
+    name: "Alfonso XII - 8 piezas",
+    detail: "Crocante salmón rosado y queso crema, envuelto en salmón rosado.",
+    price: "600",
+    section: "PLATINIUM ROLLS",
+  },
+  {
+    name: "Dream Roll - 8 piezas",
+    detail:
+      "Palta y queso crema acompañado de un volcán de atún, ciboulette, mayonesa y queso crema.",
+    price: "600",
+    section: "PLATINIUM ROLLS",
+  },
+  {
+    name: "Ikevana - 8 piezas",
+    detail:
+      "Kani kama rebozado, palta y queso crema, envuelto en salmón rosado.",
+    price: "600",
+    section: "PLATINIUM ROLLS",
+  },
+  {
+    name: "Florentino - 8 piezas",
+    detail: "Langostinos, tomates secos y queso crema envueltos en palta.",
+    price: "600",
+    section: "PLATINIUM ROLLS",
+  },
+  {
+    name: "Hell Roll - 8 piezas",
+    detail:
+      "Envuelto en sésamo tostado. Langostinos, Salmón, Salmón y Langostinos",
+    price: "700",
+    section: "HOT ROLLS",
+  },
+  {
+    name: "Chicken Hot - 8 piezas",
+    detail: "Roll rebozado con panko, relleno de pollo, cheddar y tomates secos.",
+    price: "700",
+    section: "HOT ROLLS",
+  },
+  {
+    name: "Hot Bird - 8 piezas",
+    detail: "Roll rebozado con panko, relleno de pollo, verdeo y queso.",
+    price: "700",
+    section: "HOT ROLLS",
+  },
+  {
+    name: "Bacon Roll - 8 piezas",
+    detail: "Roll panizado con panko relleno de panceta, cheddar y pollo.",
+    price: "700",
+    section: "HOT ROLLS",
+  },
+  {
+    name: "Coconut Tail - 8 piezas",
+    detail: "Roll panizado con coco relleno de langostinos y queso crema.",
+    price: "700",
+    section: "HOT ROLLS",
+  },
+
+  {
+    name: "Langostinos - 4 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "NIGUIRIS",
+  },
+  {
+    name: "Palta - 4 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "NIGUIRIS",
+  },
+  {
+    name: "Palta y tomates secos - 4 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "NIGUIRIS",
+  },
+  {
+    name: "Salmon rosado - 4 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "NIGUIRIS",
+  },
+  {
+    name: "Salmon y pomelo - 4 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "NIGUIRIS",
+  },
+  {
+    name: "Salmon ahumado - 4 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "NIGUIRIS",
+  },
+  {
+    name: "Pepino - 6 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "HOSO MAKIS",
+  },
+  {
+    name: "Salmon rosado - 6 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "HOSO MAKIS",
+  },
+  {
+    name: "Salmon ahumado - 6 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "HOSO MAKIS",
+  },
+  {
+    name: "Atun - 6 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "HOSO MAKIS",
+  },
+  {
+    name: "Palta - 6 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "HOSO MAKIS",
+  },
+  {
+    name: "Kani Kama - 6 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "HOSO MAKIS",
+  },
+  {
+    name: "Langostinos - 6 piezas",
+    detail:
+      "",
+    price: "700",
+    section: "HOSO MAKIS",
+  },
+  {
+    name: "Temaki Clasico - 1 piezas",
+    detail:
+      "Cono de alga nori relleno de arroz, kani kama, palta y queso crema.",
+    price: "700",
+    section: "TEMAKIS",
+  },
+  {
+    name: "Temaki salmon - 1 piezas",
+    detail:
+      "Cono de alga nori relleno de arroz, salmón rosado y queso crema",
+    price: "700",
+    section: "TEMAKIS",
+  },
+  {
+    name: "Temaki langostinos - 1 piezas",
+    detail:
+      "Cono de alga nori relleno de arroz, langostinos y queso crema",
+    price: "700",
+    section: "TEMAKIS",
+  },
+  {
+    name: "Temaki veggie - 1 piezas",
+    detail:
+      "Cono de alga nori relleno de arroz, rúcula, tomates secos, palta y queso crema.",
+    price: "700",
+    section: "TEMAKIS",
+  },
+  {
+    name: "Temaki ahumado - 1 piezas",
+    detail:
+      "Cono de alga nori relleno de arroz, salmón ahumado, palta y queso crema.",
+    price: "700",
+    section: "TEMAKIS",
+  },
+  {
+    name: "Salmon y palta - 4 piezas",
+    detail:
+      "Láminas de salmón rosado fresco rellenas de palta y queso crema.",
+    price: "700",
+    section: "GEISHAS",
+  },
+  {
+    name: "Salmon y langostinos - 4 piezas",
+    detail:
+      "Láminas salmón rosado fresco rellenas de langostinos y queso crema.",
+    price: "700",
+    section: "GEISHAS",
+  },
+  {
+    name: "Mango - 4 piezas",
+    detail:
+      "Láminas Salmón rosado fresco rellenas de mango y queso crema.",
+    price: "700",
+    section: "GEISHAS",
+  },
+  {
+    name: "Sashimi - 8 piezas",
+    detail:
+      "Láminas de salmón rosado fresco.",
+    price: "700",
+    section: "SASHIMI",
+  },
+  {
+    name: "Arrollados chinos - 4 piezas ",
+    detail:
+      "Arrolladitos de masa filo frita, rellenos de carne salteada con vegetales.",
+    price: "700",
+    section: "ENTRADAS",
+  },
+  {
+    name: "Wan tan de salmon - 6 piezas",
+    detail:
+      "Tortellini de masa filo frita, rellenos de salmón salteado con vegetales.",
+    price: "700",
+    section: "ENTRADAS",
+  },
+  {
+    name: "Wan tan de cerdo - 6 piezas",
+    detail:
+      "Tortellini de masa filo frita, rellenos de cerdo salteado con vegetales.",
+    price: "700",
+    section: "ENTRADAS",
+  },
+  {
+    name: "Langostinos rebozados - 8 piezas ",
+    detail:
+      "",
+    price: "700",
+    section: "ENTRADAS",
+  },
+  {
+    name: "Snak de salmon ",
+    detail:
+      "Salmón rosado rebozado frito.",
+    price: "700",
+    section: "ENTRADAS",
   },
   {
     name: "PORTER",
-    detail: "5.7% - IBU 26.6 |    Cerveza oscura profunda con un rojo intenso a trasluz. Caracter tostado y notas a chocolate. Sabores a malta, bizcochos y pan tostado. Cuerpo medio alto, amargor medio con notas terrosas.",
+    detail:
+      "5.7% - IBU 26.6 |    Cerveza oscura profunda con un rojo intenso a trasluz. Caracter tostado y notas a chocolate. Sabores a malta, bizcochos y pan tostado. Cuerpo medio alto, amargor medio con notas terrosas.",
     price: "700",
     section: "LATAS",
   },
@@ -313,7 +712,7 @@ export let jsonCafe = [
     price: "1300",
     section: "GIN + BOTANICO",
   },
- 
+
   {
     name: "TIRADO",
     detail: "",
@@ -373,13 +772,15 @@ export let jsonCafe = [
   ,
   {
     name: "PUNCH ESTACION",
-    detail: "ron dorado - frutas de estación - almibar - jugo de naranja - jugo de pomelo",
+    detail:
+      "ron dorado - frutas de estación - almibar - jugo de naranja - jugo de pomelo",
     price: "1000",
     section: "COKTELEÍA",
   },
   {
     name: "PUNCH MALIBU",
-    detail: "ron malibu - frutas de estación - almibar - jugo de naranja - jugo de pomelo",
+    detail:
+      "ron malibu - frutas de estación - almibar - jugo de naranja - jugo de pomelo",
     price: "1000",
     section: "COKTELEÍA",
   },
@@ -445,7 +846,8 @@ export let jsonCafe = [
   },
   {
     name: "JAGGER JULEP",
-    detail: "jagger - menta - azúcar negra - dash limón - jugo de naranja o pomelo",
+    detail:
+      "jagger - menta - azúcar negra - dash limón - jugo de naranja o pomelo",
     price: "1300",
     section: "COKTELEÍA",
   },
@@ -572,7 +974,8 @@ export let jsonCafe = [
   },
   {
     name: "LIMONADA SHAKEN",
-    detail: "shaken de jugo de naranja, pulpa de maracuya, almibar y jugo de naranja",
+    detail:
+      "shaken de jugo de naranja, pulpa de maracuya, almibar y jugo de naranja",
     price: "650",
     section: "COKTELEÍA",
   },
@@ -619,8 +1022,6 @@ export let jsonCafe = [
     section: "ESPUMANTES",
   },
 
-
-
   // ---------------Food
   {
     name: "Chicken Fingers",
@@ -636,7 +1037,8 @@ export let jsonCafe = [
   },
   {
     name: "Empanadas veganas",
-    detail: "(4) Empanaditas de verduras salteadas, zanahoria, morron, cebolla, berenjena & champigniones.",
+    detail:
+      "(4) Empanaditas de verduras salteadas, zanahoria, morron, cebolla, berenjena & champigniones.",
     price: "1600",
     section: "TAPEOS",
   },
@@ -690,19 +1092,22 @@ export let jsonCafe = [
   },
   {
     name: "Congreso",
-    detail: "Papas con bondiola desmenuzada, salsa de queso fundido y pimientos asados",
+    detail:
+      "Papas con bondiola desmenuzada, salsa de queso fundido y pimientos asados",
     price: "1800",
     section: "PAPAS",
   },
   {
     name: "Lomo",
-    detail: "Lomo con papas españolas y verduras asadas, con manteca de hierbas. Dip de criolla o chimichurri",
+    detail:
+      "Lomo con papas españolas y verduras asadas, con manteca de hierbas. Dip de criolla o chimichurri",
     price: "2400",
     section: "PRINCIPALES",
   },
   {
     name: "Bondiola Braseada",
-    detail: "Bondiola braseada cubierta de queso fundido, lonjas de panceta, huevo frito, cebollas caramelizadas y pimientos asados acompañadas de papas españolas",
+    detail:
+      "Bondiola braseada cubierta de queso fundido, lonjas de panceta, huevo frito, cebollas caramelizadas y pimientos asados acompañadas de papas españolas",
     price: "2400",
     section: "PRINCIPALES",
   },
@@ -714,55 +1119,64 @@ export let jsonCafe = [
   },
   {
     name: "Milanesa napo",
-    detail: "Milanesa napolitana (salsa de tomate, jamon, queso y oregano) acompañada de papas fritas",
+    detail:
+      "Milanesa napolitana (salsa de tomate, jamon, queso y oregano) acompañada de papas fritas",
     price: "2200",
     section: "PRINCIPALES",
   },
   {
     name: "Milanesa a Caballo",
-    detail: "Milanesa con queso chedar y huevo frito acompañada de papas fritas",
+    detail:
+      "Milanesa con queso chedar y huevo frito acompañada de papas fritas",
     price: "2300",
     section: "PRINCIPALES",
   },
   {
     name: "Wok de Lomo",
-    detail: "Fideos de arroz, verduras salteadas, lomo, panceta, hongos, salsa de soja y semilla de sesamo",
+    detail:
+      "Fideos de arroz, verduras salteadas, lomo, panceta, hongos, salsa de soja y semilla de sesamo",
     price: "2600",
     section: "PRINCIPALES",
   },
   {
     name: "Wok de Verdura",
-    detail: "Fideos de arros, verduras salteadas, almendras tostadas, salsa de soja y semilla de sesamo.",
+    detail:
+      "Fideos de arros, verduras salteadas, almendras tostadas, salsa de soja y semilla de sesamo.",
     price: "2300",
     section: "PRINCIPALES",
   },
   {
     name: "Wok de Pollo",
-    detail: "fideos de arroz, verduras salteadas, pollo, almendras, salsa de soja y semillas de sesamo",
+    detail:
+      "fideos de arroz, verduras salteadas, pollo, almendras, salsa de soja y semillas de sesamo",
     price: "2600",
     section: "PRINCIPALES",
   },
   {
     name: "Caesar",
-    detail: "Mix de hojas verdes, pechuga grille, croutons, queso parmesano y dressing caesar",
+    detail:
+      "Mix de hojas verdes, pechuga grille, croutons, queso parmesano y dressing caesar",
     price: "1800",
     section: "ENSALADAS",
   },
   {
     name: "Caprese",
-    detail: "Cubos de queso, cherries confitados, aceitunas negras y pesto de albahaca",
+    detail:
+      "Cubos de queso, cherries confitados, aceitunas negras y pesto de albahaca",
     price: "1700",
     section: "ENSALADAS",
   },
   {
     name: "Mediterranea",
-    detail: "Mix de hojas verdes, jamon serrano, cheese sticks, tomates cherries y aceite de oliva",
+    detail:
+      "Mix de hojas verdes, jamon serrano, cheese sticks, tomates cherries y aceite de oliva",
     price: "1800",
     section: "ENSALADAS",
   },
   {
     name: "Crispy",
-    detail: "Mix de hojas verdes, pollo grispy, crocantes de panceta, queso en hebras y dressing ranch",
+    detail:
+      "Mix de hojas verdes, pollo grispy, crocantes de panceta, queso en hebras y dressing ranch",
     price: "1800",
     section: "ENSALADAS",
   },
@@ -780,19 +1194,22 @@ export let jsonCafe = [
   },
   {
     name: "Doble Baires",
-    detail: "Pan de papa , doble carne, doble cheddar, panceta, cebolla caramelizada & huevo frito",
+    detail:
+      "Pan de papa , doble carne, doble cheddar, panceta, cebolla caramelizada & huevo frito",
     price: "2000",
     section: "ENTRE PANES",
   },
   {
     name: "Palermo",
-    detail: "Pan de papa, doble carne, doble chedar, lechuga, cebolla crispy & panceta",
+    detail:
+      "Pan de papa, doble carne, doble chedar, lechuga, cebolla crispy & panceta",
     price: "2000",
     section: "ENTRE PANES",
   },
   {
     name: "Mega Baires",
-    detail: "Pan de papa, triple carne, triple chedar, panceta, cebolla caramelizada & huevo frito",
+    detail:
+      "Pan de papa, triple carne, triple chedar, panceta, cebolla caramelizada & huevo frito",
     price: "2700",
     section: "ENTRE PANES",
   },
@@ -816,13 +1233,15 @@ export let jsonCafe = [
   },
   {
     name: "Veggie",
-    detail: "Medallon de spinaca/calabaza con lechuga, palta, cebolla caramelizada, queso crema, lonjas de parmesano & ciguliette",
+    detail:
+      "Medallon de spinaca/calabaza con lechuga, palta, cebolla caramelizada, queso crema, lonjas de parmesano & ciguliette",
     price: "1900",
     section: "ENTRE PANES",
   },
   {
     name: "Bondiola Madero",
-    detail: "Bondiola desmenuzada con salsa criolla, queso tibo, palta, tomate & huevo",
+    detail:
+      "Bondiola desmenuzada con salsa criolla, queso tibo, palta, tomate & huevo",
     price: "2000",
     section: "ENTRE PANES",
   },
@@ -900,7 +1319,8 @@ export let jsonCafe = [
   },
   {
     name: "Empanadas veganas",
-    detail: "4 Empanadas de verduras salteadas, zanahoria, morron, cebolla, berenjena & champigniones",
+    detail:
+      "4 Empanadas de verduras salteadas, zanahoria, morron, cebolla, berenjena & champigniones",
     price: "1600",
     section: "VEGGIE",
   },
@@ -912,13 +1332,15 @@ export let jsonCafe = [
   },
   {
     name: "Wok de Verdura",
-    detail: "Fideos de arros, verduras salteadas, almendras tostadas, salsa de soja y semilla de sesamo",
+    detail:
+      "Fideos de arros, verduras salteadas, almendras tostadas, salsa de soja y semilla de sesamo",
     price: "2300",
     section: "VEGGIE",
   },
   {
     name: "Buerger Veggie",
-    detail: "medallon de espinaca/calabaza con lechuga, palta, cebolla caramelizada, queso crema, lonjas de parmesano y ciboulette",
+    detail:
+      "medallon de espinaca/calabaza con lechuga, palta, cebolla caramelizada, queso crema, lonjas de parmesano y ciboulette",
     price: "1600",
     section: "VEGGIE",
   },
@@ -1093,7 +1515,6 @@ export let jsonCafe = [
     detail: "",
     price: "1200",
     section: "VINO ROSADO",
-  }
-  
-]
+  },
+];
 // ----------------------------FIN---------

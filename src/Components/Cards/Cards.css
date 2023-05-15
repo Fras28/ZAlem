@@ -1,20 +1,19 @@
-.carta{
-    padding-bottom: .5rem;     
-    }
-.granoCafe{
-    margin-top: 1.5rem;
+.carta {
+  padding-bottom: 0.5rem;
 }
-
-.titleSection > svg{
-margin-bottom: 0;
-margin-right: .5rem;
+.granoCafe {
+  margin-top: 1.5rem;
 }
 
 .titleSection > svg {
-    margin-bottom: -7px;
+  margin-bottom: 0;
+  margin-right: 0.5rem;
 }
-.espesifica{
-    font-size: 16px;
-  
-    font-weight: 400;
+
+.titleSection > svg {
+  margin-bottom: -7px;
+}
+.espesifica {
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
 }

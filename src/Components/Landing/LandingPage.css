@@ -20,9 +20,10 @@
   border-radius: 16px;
   background-color: white;
   margin: 0.3rem;
-  color: #295db1;
+  color: salmon;
   font-weight: 700;
-  box-shadow: 0px 0px 8px #0d4862;
+  box-shadow: 0px 0px 8px #0060FF inset;
+  outline: solid 1px #0060FF;
 }
 
 .titInicio > img {
@@ -33,7 +34,7 @@
 }
 .titInicio > p {
   margin: auto;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0 0.5rem;
   color: black;
   font-weight: 1000;
@@ -53,7 +54,8 @@
   margin-bottom: 16px;
   background-image: url("../assets/np_Flag\ of\ Japan\ made\ of\ rice\ and\ tuna\ meat\ texture_4ARV6b_free.jpg");
   animation: gradient-bg 50s ease infinite;
-  box-shadow: 0px 0px 8px black;
+  box-shadow: 0px 0px 8px #0060FF;
+  filter: grayscale(30%);
 }
 @keyframes gradient-bg {
   0% {
@@ -67,16 +69,16 @@
   }
 }
 .LogoNavi {
-  height: 90px;
+  height: 70px;
 }
 .logoL {
   display: flex;
-  width: 110px;
-  height: 100px;
-  border-radius: 70%;
+  width: 170px;
+  height: 120px;
+  border-radius: 50%;
   justify-content: center;
   align-items: center;
-  background-color: rgba(245, 245, 245, 0.463);
+  background-color: #0062ff60;
 }
 
 .navi2 {
