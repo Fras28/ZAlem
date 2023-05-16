@@ -12,7 +12,10 @@
   margin-top: 0rem;
   font-size: 14px;
   font-weight: 400;
+  max-height: 50px;
+  overflow: scroll;
 }
+
 .rightInfo {
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -123,6 +126,7 @@ font-family: "Montserrat", sans-serif;
     width: 100%;
     height: auto;
   }
+
 /* Estilos para el iPhone 11 Pro */
 @media (max-width: 375px) {
   .btn-svg {

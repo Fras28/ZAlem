@@ -541,7 +541,7 @@ export let jsonCafe = [
     section: "ENTRADAS",
   },
   {
-    name: "Snak de salmon ",
+    name: "Snak de salmon",
     imgProd:"http://www.sushiandroll.com.ar/images/sushi-and-roll-adicionales-entradas-snacks-de-salmon.jpg",
     detail:
       "Salmón rosado rebozado frito.",
@@ -550,10 +550,91 @@ export let jsonCafe = [
   }
   ,
   {
-    name: "Snak de salmon ",
-    imgProd:"",
+    name: "Salad roll - 8 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-salad-roll.png",
+    detail:
+      "Zanahoria, palta, pepino y queso crema.",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Veggie wok - 8 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-veggie-wok.png",
+    detail:
+      "Repollo blanco, repollo morado y verdeo, salteados al wok con salsa de soja, un touch de jengibre y aceite de sésamo.",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Green tomato - 8 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-green-tomato.png",
+    detail:
+      "Palta, tomates secos y queso crema, envuelto en rúcula fresca.",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Yogui roll - 8 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-yogui-roll.png",
+    detail:
+      "Palta, zanahoria, pepino y queso crema, envuelto en lechuga.",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Sesamo roll - 8 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/sesamo-veggie-sushi-and-roll-bahia-blanca.png",
+    detail:
+      "Vegetales envueltos en sésamo tostado.",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Niguiti Palta- 4 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-niguiris-de-palta.png",
     detail:
       "",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Niguiri palta y tomates secos - 4 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-niguiris-de-palta-y-tomates-secos.png",
+    detail:
+      "",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Hosomaki pepino - 4 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-hoso-maki-de-pepino.png",
+    detail:
+      "",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Hosomaki palta - 4 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-hoso-maki-de-palta.png",
+    detail:
+      "",
+    price: "700",
+    section: "VEGGIE",
+  }
+  ,
+  {
+    name: "Temaki veggie - 8 piezas",
+    imgProd:"http://www.sushiandroll.com.ar/images/thumbs-sushi-and-roll-bahia-blanca-temaki-veggie.png",
+    detail:
+      "Cono de alga nori relleno de arroz, rúcula, tomates secos, palta y queso crema.",
     price: "700",
     section: "VEGGIE",
   }
