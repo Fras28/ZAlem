@@ -10,7 +10,7 @@ export const Card = ({ producto }) => {
   const dispatch = useDispatch();
   const [articles, setArticles] = useState({
     name: [],
-    price:[]
+    price: [],
   });
 
   let artAdd = function addArticle(e) {
@@ -34,6 +34,9 @@ export const Card = ({ producto }) => {
 
   return (
     <div className="contCard">
+      <div className="contImg">
+      <img src={producto.imgProd} alt="img producto" className="imgProd" />
+      </div>
       <div className="leftInfo">
         <h2 className="nameProd">{producto.name}</h2>
         <p className="price">${producto.price}</p>
@@ -48,12 +51,10 @@ export const Card = ({ producto }) => {
           ) : (
             <div className="masMenos">
               <button className="btn-svg" onClick={cancelFav}>
-         
                 -
               </button>
               <p className="cuantiti">{thisFav.length}</p>
               <button className="btn-svg" onClick={artAdd}>
-               
                 +
               </button>
             </div>

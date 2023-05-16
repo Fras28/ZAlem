@@ -17,3 +17,16 @@
   font-size: 14px;
   font-family: "Courier New", Courier, monospace;
 }
+
+.rowsCard{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contImg{
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px #0060FF;
+  overflow: hidden;
+  display: flex;
+}
