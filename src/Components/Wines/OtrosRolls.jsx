@@ -35,19 +35,12 @@ export const Otraspiezas = (id) => {
         <a href="#5">Organicos</a>
         <a href="#4">Cabernet Franc</a>
         <a href="#3">Cabernet Souvignon</a>
-        <a href="#2">Malbec</a>
         <a href="#1">Cafe</a>
       </div>
       <div className="conteinerLC ">
         <div className="conteinerLB2 animate__animated  animate__zoomIn animate__faster">
           <img src={wines} alt="promo" id="1" />
           <Cards products={VinoT}  />
-          <img
-            src="https://http2.mlstatic.com/D_NQ_NP_625670-MLA44010264661_112020-O.webp"
-            alt="promo"
-            id="2"
-          />
-          <Cards products={Malbec} />
           <img
             src="https://vinosybuenvivir.com/wp-content/uploads/2019/07/Terrazas-de-los-Andes-5-e1562274801772.jpg"
             alt="promo"

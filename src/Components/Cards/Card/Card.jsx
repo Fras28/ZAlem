@@ -35,7 +35,7 @@ export const Card = ({ producto }) => {
   return (
     <div className="contCard">
       <div className="contImg">
-      <img src={producto.imgProd} alt="img producto" className="imgProd" />
+      {producto.imgProd?<img src={producto.imgProd} alt="img producto" className="imgProd" />:null}
       </div>
       <div className="leftInfo">
         <h2 className="nameProd">{producto.name}</h2>

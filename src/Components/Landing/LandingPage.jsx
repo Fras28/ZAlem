@@ -91,6 +91,12 @@ export default function LandingPage(url) {
               <p>Cocina y Veggie</p>
             </div>
           </NavLink>
+          <NavLink to={`${url.location.pathname}/Agregados`}>
+            <div className="titInicio">
+              <img src={img4} alt="" />
+              <p>Agregados y Dips</p>
+            </div>
+          </NavLink>
         </div>
       </div>
       <div className="navi2">
